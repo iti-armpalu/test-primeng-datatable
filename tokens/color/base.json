@@ -1,0 +1,55 @@
+{
+  "color": {
+    "base"       : {
+      "brand"         : {
+        "primary"       : { "value": "#085EFF" },
+        "secondary"     : { "value": "#000000" }
+      },
+      "surface"       : { "value": "#FFFFFF" },
+      "on-surface"    : { "value": "#000000" },
+      "on-surface-alt": { "value": "#FFFFFF" },
+      "neutral"       : { "value": "#C8C9CB" },
+      "success"       : { "value": "#24D0BE" },
+      "info"          : { "value": "#00D0FF" },
+      "warning"       : { "value": "#FB9D29" },
+      "danger"        : { "value": "#DD2469" }
+    },
+    "chart"     : {
+      "1":  { "value": "#085EFF" },
+      "2":  { "value": "#00D0FF" },
+      "3":  { "value": "#24D0BE" },
+      "4":  { "value": "#FB9D29" },
+      "5":  { "value": "#FB664D" },
+      "6":  { "value": "#DD2469" },
+      "7":  { "value": "#B452CB" },
+      "8":  { "value": "#05348F" },
+      "9":  { "value": "#007F9C" },
+      "10": { "value": "#0D877B" },
+      "11": { "value": "#B36C12" },
+      "12": { "value": "#A63521" }
+    },
+    "gender"    : {
+      "male"      : { "value": "#00D0FF" },
+      "female"    : { "value": "#DD2469" },
+      "non-binary": { "value": "#B452CB" }
+    },
+    "background": {
+      "default"   : { "value": "#F7F7F7" },
+      "nested"    : { "value": "#F2F2F2" },
+      "hover"     : { "value": "#F0F0F0" },
+      "pressed"   : { "value": "#E8E8E8" },
+      "selected"  : { "value": "#E8E8E8" }
+    },
+    "surface"   : {
+      "default"   : {
+        "default"           : { "value": "#F7F7F7" },
+        "nested"            : { "value": "#F2F2F2" },
+        "hover"             : { "value": "#F0F0F0" },
+        "pressed"           : { "value": "#E8E8E8" },
+        "selected"          : { "value": "#E8E8E8" },
+        "selected-hover"    : { "value": "#E8E8E8" },
+        "selected-pressed"  : { "value": "#E8E8E8" }
+      }
+    }
+  }
+}

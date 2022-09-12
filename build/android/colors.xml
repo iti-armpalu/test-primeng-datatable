@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Do not edit directly
+  Generated on Mon, 12 Sep 2022 11:22:12 GMT
+-->
+<resources>
+  <color name="color_base_brand_primary">#ff085eff</color>
+  <color name="color_base_brand_secondary">#ff000000</color>
+  <color name="color_base_surface">#ffffffff</color>
+  <color name="color_base_on_surface">#ff000000</color>
+  <color name="color_base_on_surface_alt">#ffffffff</color>
+  <color name="color_base_neutral">#ffc8c9cb</color>
+  <color name="color_base_success">#ff24d0be</color>
+  <color name="color_base_info">#ff00d0ff</color>
+  <color name="color_base_warning">#fffb9d29</color>
+  <color name="color_base_danger">#ffdd2469</color>
+  <color name="color_chart_1">#ff085eff</color>
+  <color name="color_chart_2">#ff00d0ff</color>
+  <color name="color_chart_3">#ff24d0be</color>
+  <color name="color_chart_4">#fffb9d29</color>
+  <color name="color_chart_5">#fffb664d</color>
+  <color name="color_chart_6">#ffdd2469</color>
+  <color name="color_chart_7">#ffb452cb</color>
+  <color name="color_chart_8">#ff05348f</color>
+  <color name="color_chart_9">#ff007f9c</color>
+  <color name="color_chart_10">#ff0d877b</color>
+  <color name="color_chart_11">#ffb36c12</color>
+  <color name="color_chart_12">#ffa63521</color>
+  <color name="color_gender_male">#ff00d0ff</color>
+  <color name="color_gender_female">#ffdd2469</color>
+  <color name="color_gender_non_binary">#ffb452cb</color>
+  <color name="color_background_default">#fff7f7f7</color>
+  <color name="color_background_nested">#fff2f2f2</color>
+  <color name="color_background_hover">#fff0f0f0</color>
+  <color name="color_background_pressed">#ffe8e8e8</color>
+  <color name="color_background_selected">#ffe8e8e8</color>
+  <color name="color_surface_default_default">#fff7f7f7</color>
+  <color name="color_surface_default_nested">#fff2f2f2</color>
+  <color name="color_surface_default_hover">#fff0f0f0</color>
+  <color name="color_surface_default_pressed">#ffe8e8e8</color>
+  <color name="color_surface_default_selected">#ffe8e8e8</color>
+  <color name="color_surface_default_selected_hover">#ffe8e8e8</color>
+  <color name="color_surface_default_selected_pressed">#ffe8e8e8</color>
+  <color name="color_font_base">#ff000000</color>
+  <color name="color_font_secondary">#ffffffff</color>
+  <color name="color_font_tertiary">#ffb3b4b7</color>
+  
+</resources>
