@@ -1,0 +1,30 @@
+<div
+  class="color-card p-3"
+  [style.backgroundColor]="hex"
+  [style.color]="(hex | lowercase) === '#ffffff' ? '#000000' : '#ffffff'"
+  [cpCancelButton]="true"
+  [cpPosition]="'right'"
+  [cpPositionOffset]="'50%'"
+  [cpPositionRelativeToArrow]="true"
+
+  [cpAlphaChannel]="'forced'"
+  [cpOutputFormat]="'hex'"
+
+  [(colorPicker)]="hex">
+    <div>
+      <p
+        class="color-text">
+          {{ title }}
+      </p>
+      <!-- <p>
+        {{ hex | uppercase }}
+      </p> -->
+      <p>
+        {{ (hex | slice:-2) === "ff" ? (hex | slice:0:7) : hex }}
+      </p>
+    </div>
+    <p
+      class="font-size-xs">
+      {{ designToken }}
+    </p>
+</div>

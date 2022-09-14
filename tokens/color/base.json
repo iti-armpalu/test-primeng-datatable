@@ -42,14 +42,134 @@
     },
     "surface"   : {
       "default"   : {
-        "default"           : { "value": "#F7F7F7" },
-        "nested"            : { "value": "#F2F2F2" },
-        "hover"             : { "value": "#F0F0F0" },
-        "pressed"           : { "value": "#E8E8E8" },
-        "selected"          : { "value": "#E8E8E8" },
-        "selected-hover"    : { "value": "#E8E8E8" },
-        "selected-pressed"  : { "value": "#E8E8E8" }
+        "default"           : { "value": "#FFFFFF" },
+        "nested"            : { "value": "#FAFAFA" },
+        "hover"             : { "value": "#F7F7F7" },
+        "pressed"           : { "value": "#F0F0F0" },
+        "selected"          : { "value": "#F0F0F0" },
+        "selected-hover"    : { "value": "#EBEBEB" },
+        "selected-pressed"  : { "value": "#E6E6E6" }
+      },
+      "brand"     : {
+        "default" : { "value": "#085EFF" },
+        "hover"   : { "value": "#0056F8" },
+        "pressed" : { "value": "#0051E8" }
+      },
+      "neutral"     : {
+        "default" : { "value": "#C7C8CA" },
+        "hover"   : { "value": "#BFC0C3" },
+        "pressed" : { "value": "#B7B9BB" }
+      },
+      "alt"     : {
+        "default" : { "value": "#000000" },
+        "hover"   : { "value": "#000000" },
+        "pressed" : { "value": "#000000" }
+      },
+      "success"     : {
+        "default" : { "value": "#24D0BE" },
+        "hover"   : { "value": "#22C3B2" },
+        "pressed" : { "value": "#1FB6A6" }
+      },
+      "info"     : {
+        "default" : { "value": "#00D0FF" },
+        "hover"   : { "value": "#00C4F0" },
+        "pressed" : { "value": "#00B7E0" }
+      },
+      "warning"     : {
+        "default" : { "value": "#FB9D29" },
+        "hover"   : { "value": "#FB961A" },
+        "pressed" : { "value": "#FA8F0B" }
+      },
+      "danger"     : {
+        "default" : { "value": "#DD2469" },
+        "hover"   : { "value": "#D12062" },
+        "pressed" : { "value": "#C41E5C" }
       }
+    },
+    "on-surface"              : { "value": "#000000"},
+    "on-surface-neutral"      : { "value": "#C7C8CA"},
+    "on-surface-brand"        : { "value": "#085EFF"},
+    "on-surface-success"      : { "value": "#24D0BE"},
+    "on-surface-info"         : { "value": "#00D0FF"},
+    "on-surface-warning"      : { "value": "#FB9D29"},
+    "on-surface-danger"       : { "value": "#DD2469"},
+    "on-surface-alternative"  : { "value": "#FFFFFF"},
+    "disabled"  : {
+      "default": { "value": "#F5F5F5"},
+      "nested": { "value": "#EBEBEB"},
+      "alt": { "value": "#49494A"}
+    },
+    "swatches-primary-brand"  : {
+      "50"  : { "value": "#FFFFFF"},
+      "100" : { "value": "#D4E3FF"},
+      "200" : { "value": "#A1C2FF"},
+      "300" : { "value": "#6EA0FF"},
+      "400" : { "value": "#3B7FFF"},
+      "500" : { "value": "#085EFF"},
+      "600" : { "value": "#004AD4"},
+      "700" : { "value": "#0038A1"},
+      "800" : { "value": "#00266E"},
+      "900" : { "value": "#00153B"}
+    },
+    "swatches-secondary-brand"  : {
+      "50"  : { "value": "#4E2DFF"},
+      "100" : { "value": "#2700F9"},
+      "200" : { "value": "#1F00C6"},
+      "300" : { "value": "#170093"},
+      "400" : { "value": "#0F0060"},
+      "500" : { "value": "#000000"},
+      "600" : { "value": "#000000"},
+      "700" : { "value": "#000000"},
+      "800" : { "value": "#000000"},
+      "900" : { "value": "#000000"}
+    },
+    "swatches-success"  : {
+      "50"  : { "value": "#F6FDFD"},
+      "100" : { "value": "#CAF6F1"},
+      "200" : { "value": "#9FEEE6"},
+      "300" : { "value": "#73E7DB"},
+      "400" : { "value": "#48DFCF"},
+      "500" : { "value": "#24D0BE"},
+      "600" : { "value": "#1CA596"},
+      "700" : { "value": "#15796F"},
+      "800" : { "value": "#0D4E47"},
+      "900" : { "value": "#06221F"}
+    },
+    "swatches-info"  : {
+      "50"  : { "value": "#FFFFFF"},
+      "100" : { "value": "#D4E3FF"},
+      "200" : { "value": "#A1C2FF"},
+      "300" : { "value": "#A1C2FF"},
+      "400" : { "value": "#A1C2FF"},
+      "500" : { "value": "#A1C2FF"},
+      "600" : { "value": "#A1C2FF"},
+      "700" : { "value": "#A1C2FF"},
+      "800" : { "value": "#A1C2FF"},
+      "900" : { "value": "#A1C2FF"}
+    },
+    "swatches-warning"  : {
+      "50"  : { "value": "#FFFFFF"},
+      "100" : { "value": "#D4E3FF"},
+      "200" : { "value": "#A1C2FF"},
+      "300" : { "value": "#A1C2FF"},
+      "400" : { "value": "#A1C2FF"},
+      "500" : { "value": "#A1C2FF"},
+      "600" : { "value": "#A1C2FF"},
+      "700" : { "value": "#A1C2FF"},
+      "800" : { "value": "#A1C2FF"},
+      "900" : { "value": "#A1C2FF"}
+    },
+    "swatches-danger"  : {
+      "50"  : { "value": "#FFFFFF"},
+      "100" : { "value": "#D4E3FF"},
+      "200" : { "value": "#A1C2FF"},
+      "300" : { "value": "#A1C2FF"},
+      "400" : { "value": "#A1C2FF"},
+      "500" : { "value": "#A1C2FF"},
+      "600" : { "value": "#A1C2FF"},
+      "700" : { "value": "#A1C2FF"},
+      "800" : { "value": "#A1C2FF"},
+      "900" : { "value": "#A1C2FF"}
     }
   }
 }

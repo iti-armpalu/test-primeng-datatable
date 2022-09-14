@@ -6,20 +6,24 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Metron related
 import { MetronDesignSystemLibModule } from '@nudgelabs/metron-design-system-lib';
 import { MaterialModule } from './shared/material/material.module';
+import { ColorPickerModule } from 'ngx-color-picker';
 
 // Components
 import { AppComponent } from './app.component';
+import { ColorpickerComponent } from './components/colorpicker/colorpicker.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ColorpickerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MetronDesignSystemLibModule,
-    MaterialModule
+    MaterialModule,
+    ColorPickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -28,6 +28,7 @@
     "angular2-multiselect-dropdown": "^5.0.4",
     "highcharts": "^10.2.1",
     "ng-inline-svg": "^13.1.2",
+    "ngx-color-picker": "^12.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

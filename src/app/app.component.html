@@ -28,41 +28,14 @@
             </div>
             <div
               class="grid">
-                <div class="col col-3">
-                  <div
-                    class="color-base-brand-primary color-font-secondary color-card">
-                      <div>
-                        <p
-                          class="color-text">
-                            Primary Color
-                        </p>
-                        <p>
-                          #085EFF
-                        </p>
-                      </div>
-                      <p
-                        class="font-size-xs">
-                          --color-base-brand-primary
-                      </p>
-                  </div>
-                </div>
-                <div class="col col-3">
-                  <div
-                    class="color-base-brand-secondary color-font-secondary color-card">
-                      <div>
-                        <p
-                          class="color-text">
-                            Secondary Color
-                        </p>
-                        <p>
-                          #000000
-                        </p>
-                      </div>
-                      <p
-                        class="font-size-xs">
-                          --color-base-brand-secondary
-                      </p>
-                  </div>
+                <div
+                  *ngFor="let color of mainBrandColors"
+                  class="col col-3 pl-1 pr-1">
+                    <app-colorpicker
+                      hex="{{ color.hex }}"
+                      title="{{ color.title }}"
+                      designToken="{{ color.designToken }}">
+                    </app-colorpicker>
                 </div>
             </div>
             </div>
@@ -80,77 +53,14 @@
             </div>
             <div
               class="grid">
-                <div class="col col-3">
-                  <div
-                    class="color-base-surface color-font-base color-card">
-                      <div>
-                        <p
-                          class="color-text">
-                            Surface Color
-                        </p>
-                        <p>
-                          #FFFFFF
-                        </p>
-                      </div>
-                      <p
-                        class="font-size-xs">
-                          --color-base-surface
-                      </p>
-                  </div>
-                </div>
-                <div class="col col-3">
-                  <div
-                    class="color-base-on-surface color-font-secondary color-card">
-                      <div>
-                        <p
-                          class="color-text">
-                            On Surface Color
-                        </p>
-                        <p>
-                          #000000
-                        </p>
-                      </div>
-                      <p
-                        class="font-size-xs">
-                          --color-base-on-surface
-                      </p>
-                  </div>
-                </div>
-                <div class="col col-3">
-                  <div
-                    class="color-base-on-surface-alt color-font-base color-card">
-                      <div>
-                        <p
-                          class="color-text">
-                            On Surface Alt Color
-                        </p>
-                        <p>
-                          #FFFFFF
-                        </p>
-                      </div>
-                    <p
-                      class="font-size-xs">
-                        --color-base-on-surface-alt
-                    </p>
-                  </div>
-                </div>
-                <div class="col col-3">
-                  <div
-                    class="color-base-neutral color-font-secondary color-card">
-                    <div>
-                      <p
-                        class="color-text">
-                          Neutral Color
-                      </p>
-                      <p>
-                        #C8C9CB
-                      </p>
-                    </div>
-                    <p
-                      class="font-size-xs">
-                        --color-base-neutral
-                    </p>
-                  </div>
+                <div
+                  *ngFor="let color of surfaceColors"
+                  class="col col-3 pl-1 pr-1">
+                    <app-colorpicker
+                      hex="{{ color.hex }}"
+                      title="{{ color.title }}"
+                      designToken="{{ color.designToken }}">
+                    </app-colorpicker>
                 </div>
             </div>
             </div>
@@ -168,77 +78,14 @@
             </div>
             <div
               class="grid">
-                <div class="col col-3">
-                  <div
-                    class="color-base-success color-font-secondary color-card">
-                    <div>
-                      <p
-                        class="color-text">
-                          Success
-                      </p>
-                      <p>
-                        #24D0BE
-                      </p>
-                    </div>
-                    <p
-                      class="font-size-xs">
-                        --color-base-success
-                    </p>
-                  </div>
-                </div>
-                <div class="col col-3">
-                  <div
-                    class="color-base-info color-font-secondary color-card">
-                    <div>
-                      <p
-                        class="color-text">
-                          Informational
-                      </p>
-                      <p>
-                        #00D0FF
-                      </p>
-                    </div>
-                    <p
-                      class="font-size-xs">
-                        --color-base-info
-                    </p>
-                  </div>
-                </div>
-                <div class="col col-3">
-                  <div
-                    class="color-base-warning color-font-secondary color-card">
-                    <div>
-                      <p
-                        class="color-text">
-                          Warning
-                      </p>
-                      <p>
-                        #FB9D29
-                      </p>
-                    </div>
-                    <p
-                      class="font-size-xs">
-                        --color-base-warning
-                    </p>
-                  </div>
-                </div>
-                <div class="col col-3">
-                  <div
-                    class="color-base-danger color-font-secondary color-card">
-                    <div>
-                      <p
-                        class="color-text">
-                          Danger
-                      </p>
-                      <p>
-                        #DD2469
-                      </p>
-                    </div>
-                    <p
-                      class="font-size-xs">
-                        --color-base-danger
-                    </p>
-                  </div>
+                <div
+                  *ngFor="let color of contextualColors"
+                  class="col col-3 pl-1 pr-1">
+                    <app-colorpicker
+                      hex="{{ color.hex }}"
+                      title="{{ color.title }}"
+                      designToken="{{ color.designToken }}">
+                    </app-colorpicker>
                 </div>
             </div>
             </div>
@@ -256,278 +103,24 @@
             </div>
             <div
               class="grid">
-              <div
-                class="col col-3 mb-2">
                 <div
-                  class="color-chart-1 color-font-secondary color-card">
-                    <div>
-                      <p
-                        class="color-text">
-                          Chart 1
-                      </p>
-                      <p>
-                        #085EFF
-                      </p>
-                    </div>
-                    <p
-                      class="font-size-xs">
-                        --color-chart-1
-                    </p>
+                  *ngFor="let color of dataVisualizationColors"
+                  class="col col-3 mb-2 pl-1 pr-1">
+                    <app-colorpicker
+                      hex="{{ color.hex }}"
+                      title="{{ color.title }}"
+                      designToken="{{ color.designToken }}">
+                    </app-colorpicker>
                 </div>
-              </div>
-              <div class="col col-3 mb-2">
-                <div
-                  class="color-chart-2 color-font-secondary color-card">
-                    <div>
-                      <p
-                        class="color-text">
-                          Chart 2
-                      </p>
-                      <p>
-                        #00D0FF
-                      </p>
-                    </div>
-                    <p
-                      class="font-size-xs">
-                        --color-chart-2
-                    </p>
-                </div>
-              </div>
-              <div class="col col-3 mb-2">
-                <div
-                  class="color-chart-3 color-font-secondary color-card">
-                  <div>
-                    <p
-                      class="color-text">
-                        Chart 3
-                    </p>
-                    <p>
-                      #085EFF
-                    </p>
-                  </div>
-                  <p
-                    class="font-size-xs">
-                      --color-chart-3
-                  </p>
-                </div>
-              </div>
-              <div class="col col-3 mb-2">
-                <div
-                  class="color-chart-4 color-font-secondary color-card">
-                    <div>
-                      <p
-                        class="color-text">
-                          Chart 4
-                      </p>
-                      <p>
-                        #FB9D29
-                      </p>
-                    </div>
-                    <p
-                      class="font-size-xs">
-                        --color-chart-4
-                    </p>
-                </div>
-              </div>
-              <div class="col col-3 mb-2">
-                <div
-                  class="color-chart-5 color-font-secondary color-card">
-                  <div>
-                    <p
-                      class="color-text">
-                        Chart 5
-                    </p>
-                    <p>
-                      #FB664D
-                    </p>
-                  </div>
-                  <p
-                    class="font-size-xs">
-                      --color-chart-5
-                  </p>
-                </div>
-              </div>
-              <div class="col col-3 mb-2">
-                <div
-                  class="color-chart-6 color-font-secondary color-card">
-                    <div>
-                      <p
-                        class="color-text">
-                          Chart 6
-                      </p>
-                      <p>
-                        #DD2469
-                      </p>
-                    </div>
-                    <p
-                      class="font-size-xs">
-                        --color-chart-6
-                    </p>
-                </div>
-              </div>
-              <div class="col col-3 mb-2">
-                <div
-                  class="color-chart-7 color-font-secondary color-card">
-                    <div>
-                      <p
-                        class="color-text">
-                          Chart 7
-                      </p>
-                      <p>
-                        #B452CB
-                      </p>
-                    </div>
-                    <p
-                      class="font-size-xs">
-                        --color-chart-7
-                    </p>
-                </div>
-              </div>
-              <div class="col col-3 mb-2">
-                <div
-                  class="color-chart-8 color-font-secondary color-card">
-                    <div>
-                      <p
-                        class="color-text">
-                          Chart 8
-                      </p>
-                      <p>
-                        #05348F
-                      </p>
-                    </div>
-                    <p
-                      class="font-size-xs">
-                        --color-chart-8
-                    </p>
-                </div>
-              </div>
-              <div class="col col-3 mb-2">
-                <div
-                  class="color-chart-9 color-font-secondary color-card">
-                    <div>
-                      <p
-                        class="color-text">
-                          Chart 9
-                      </p>
-                      <p>
-                        #007F9C
-                      </p>
-                    </div>
-                    <p
-                      class="font-size-xs">
-                        --color-chart-9
-                    </p>
-                </div>
-              </div>
-              <div class="col col-3 mb-2">
-                <div
-                  class="color-chart-10 color-font-secondary color-card">
-                    <div>
-                      <p
-                        class="color-text">
-                          Chart 10
-                      </p>
-                      <p>
-                        #0D877B
-                      </p>
-                    </div>
-                    <p
-                      class="font-size-xs">
-                        --color-chart-10
-                    </p>
-                </div>
-              </div>
-              <div class="col col-3 mb-2">
-                <div
-                  class="color-chart-11 color-font-secondary color-card">
-                    <div>
-                      <p
-                        class="color-text">
-                          Chart 11
-                      </p>
-                      <p>
-                        #B36C12
-                      </p>
-                    </div>
-                    <p
-                      class="font-size-xs">
-                        --color-chart-11
-                    </p>
-                </div>
-              </div>
-              <div class="col col-3 mb-2">
-                <div
-                  class="color-chart-12 color-font-secondary color-card">
-                    <div>
-                      <p
-                        class="color-text">
-                          Chart 12
-                      </p>
-                      <p>
-                        #A63521
-                      </p>
-                    </div>
-                    <p
-                      class="font-size-xs">
-                        --color-chart-12
-                    </p>
-                </div>
-              </div>
-              <div class="col col-3 mb-2">
-                <div
-                  class="color-gender-male color-font-secondary color-card">
-                    <div>
-                      <p
-                        class="color-text">
-                          Male
-                      </p>
-                      <p>
-                        #00D0FF
-                      </p>
-                    </div>
-                    <p
-                      class="font-size-xs">
-                        --color-gender-male
-                    </p>
-                </div>
-              </div>
-              <div class="col col-3 mb-2">
-                <div
-                  class="color-gender-female color-font-secondary color-card">
-                    <div>
-                      <p
-                        class="color-text">
-                          Female
-                      </p>
-                      <p>
-                        #DD2469
-                      </p>
-                    </div>
-                    <p
-                      class="font-size-xs">
-                        --color-gender-female
-                    </p>
-                </div>
-              </div>
-              <div class="col col-3 mb-2">
-                <div
-                  class="color-gender-non-binary color-font-secondary color-card">
-                    <div>
-                      <p
-                        class="color-text">
-                          Non-binary
-                      </p>
-                      <p>
-                        #B452CB
-                      </p>
-                    </div>
-                    <p
-                      class="font-size-xs">
-                        --color-gender-non-binary
-                    </p>
-                </div>
-              </div>
             </div>
+            </div>
+            <h5>
+              Generated Color Tokens
+            </h5>
+            <div>
+              <h6>
+                Background Colors
+              </h6>
             </div>
           </div>
         </mat-tab>
@@ -537,3 +130,4 @@
         </mat-tab>
     </mat-tab-group>
 </div>
+
