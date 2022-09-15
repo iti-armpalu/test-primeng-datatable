@@ -9,6 +9,11 @@
   margin-left: auto;
 }
 
+// Grid
+.grid {
+  margin: 0 -4px;
+}
+
 // Card
 .color-card {
   border-radius: 4px;
@@ -34,104 +39,3 @@
 .color-font-tertiary {
   color: $color-font-tertiary;
 }
-
-.color-base-brand-primary {
-  background-color: $color-base-brand-primary;
-}
-
-.color-base-brand-secondary {
-  background-color: $color-base-brand-secondary;
-}
-
-.color-base-surface {
-  background-color: $color-base-surface;
-}
-
-.color-base-on-surface {
-  background-color: $color-base-on-surface;
-}
-
-.color-base-on-surface-alt {
-  background-color: $color-base-on-surface-alt;
-}
-
-.color-base-neutral {
-  background-color: $color-base-neutral;
-}
-
-.color-base-success {
-  background-color: $color-base-success;
-}
-
-.color-base-info {
-  background-color: $color-base-info;
-}
-
-.color-base-warning {
-  background-color: $color-base-warning;
-}
-
-.color-base-danger {
-  background-color: $color-base-danger;
-}
-
-.color-chart-1 {
-  background-color: $color-chart-1;
-}
-
-.color-chart-2 {
-  background-color: $color-chart-2;
-}
-
-.color-chart-3 {
-  background-color: $color-chart-3;
-}
-
-.color-chart-4 {
-  background-color: $color-chart-4;
-}
-
-.color-chart-5 {
-  background-color: $color-chart-5;
-}
-
-.color-chart-6 {
-  background-color: $color-chart-6;
-}
-
-.color-chart-7 {
-  background-color: $color-chart-7;
-}
-
-.color-chart-8 {
-  background-color: $color-chart-8;
-}
-
-.color-chart-9 {
-  background-color: $color-chart-9;
-}
-
-.color-chart-10 {
-  background-color: $color-chart-10;
-}
-
-.color-chart-11 {
-  background-color: $color-chart-11;
-}
-
-.color-chart-12 {
-  background-color: $color-chart-12;
-}
-
-.color-gender-male {
-  background-color: $color-gender-male;
-}
-
-.color-gender-female {
-  background-color: $color-gender-female;
-}
-
-.color-gender-non-binary {
-  background-color: $color-gender-non-binary;
-}
-
