@@ -22,6 +22,7 @@
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
     "@crystalui/angular-lightbox": "^1.1.8",
+    "@ctrl/tinycolor": "^3.4.1",
     "@iconscout/unicons": "^4.0.1",
     "@nudgelabs/metron-design-system-lib": "^1.1.10",
     "angular-highcharts": "^13.0.0",

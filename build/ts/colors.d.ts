@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 14 Sep 2022 08:32:16 GMT
+ * Generated on Fri, 16 Sep 2022 12:43:29 GMT
  */
 
 export const ColorBaseBrandPrimary : string;

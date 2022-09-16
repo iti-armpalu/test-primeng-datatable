@@ -2,17 +2,89 @@
   "color": {
     "base"       : {
       "brand"         : {
-        "primary"       : { "value": "#085EFF" },
-        "secondary"     : { "value": "#000000" }
+        "primary"   : {
+          "hsl": {
+            "h": "219",
+            "s": "100%",
+            "l": "51.6%"
+          },
+          "type": "color",
+          "const": {
+            "dark": "calc((7% - {color.base.brand.primary.hsl.l})/4)",
+            "light": "calc((97% - {color.base.brand.primary.hsl.l})/5)"
+          },
+          "value": "hsl({color.base.brand.primary.hsl.h}, {color.base.brand.primary.hsl.s}, {color.base.brand.primary.hsl.l})"
+        },
+        "secondary" : {
+          "hsl": {
+            "h": "249",
+            "s": "100%",
+            "l": "19%"
+          },
+          "type": "color",
+          "const": {
+            "dark": "calc((7% - {color.base.brand.secondary.hsl.l})/4)",
+            "light": "calc((97% - {color.base.brand.secondary.hsl.l})/5)"
+          },
+          "value": "hsl({color.base.brand.secondary.hsl.h}, {color.base.brand.secondary.hsl.s}, {color.base.brand.secondary.hsl.l})"
+        }
       },
       "surface"       : { "value": "#FFFFFF" },
       "on-surface"    : { "value": "#000000" },
       "on-surface-alt": { "value": "#FFFFFF" },
       "neutral"       : { "value": "#C8C9CB" },
-      "success"       : { "value": "#24D0BE" },
-      "info"          : { "value": "#00D0FF" },
-      "warning"       : { "value": "#FB9D29" },
-      "danger"        : { "value": "#DD2469" }
+      "success": {
+        "hsl": {
+          "h": "174",
+          "s": "70.5%",
+          "l": "47.8%"
+        },
+        "type": "color",
+        "const": {
+          "dark": "calc((7% - {color.base.success.hsl.l})/4)",
+          "light": "calc((97% - {color.base.success.hsl.l})/5)"
+        },
+        "value": "hsl({color.base.success.hsl.h}, {color.base.success.hsl.s}, {color.base.success.hsl.l})"
+      },
+      "info": {
+        "hsl": {
+          "h": "191",
+          "s": "100%",
+          "l": "50%"
+        },
+        "type": "color",
+        "const": {
+          "dark": "calc((7% - {color.base.info.hsl.l})/4)",
+          "light": "calc((97% - {color.base.info.hsl.l})/5)"
+        },
+        "value": "hsl({color.base.info.hsl.h}, {color.base.info.hsl.s}, {color.base.info.hsl.l})"
+      },
+      "warning": {
+        "hsl": {
+          "h": "33",
+          "s": "96.3%",
+          "l": "57.3%"
+        },
+        "type": "color",
+        "const": {
+          "dark": "calc((7% - {color.base.warning.hsl.l})/4)",
+          "light": "calc((97% - {color.base.warning.hsl.l})/5)"
+        },
+        "value": "hsl({color.base.warning.hsl.h}, {color.base.warning.hsl.s}, {color.base.warning.hsl.l})"
+      },
+      "danger": {
+        "hsl": {
+          "h": "338",
+          "s": "73.1%",
+          "l": "50.4%"
+        },
+        "type": "color",
+        "const": {
+          "dark": "calc((7% - {color.base.danger.hsl.l})/4)",
+          "light": "calc((97% - {color.base.danger.hsl.l})/5)"
+        },
+        "value": "hsl({color.base.danger.hsl.h}, {color.base.danger.hsl.s}, {color.base.danger.hsl.l})"
+      }
     },
     "chart"     : {
       "1":  { "value": "#085EFF" },
@@ -95,81 +167,83 @@
     "on-surface-danger"       : { "value": "#DD2469"},
     "on-surface-alternative"  : { "value": "#FFFFFF"},
     "disabled"  : {
-      "default": { "value": "#F5F5F5"},
-      "nested": { "value": "#EBEBEB"},
-      "alt": { "value": "#49494A"}
+      "default" : { "value": "#F5F5F5"},
+      "nested"  : { "value": "#EBEBEB"},
+      "alt"     : { "value": "#49494A"}
     },
-    "swatches-primary-brand"  : {
-      "50"  : { "value": "#FFFFFF"},
-      "100" : { "value": "#D4E3FF"},
-      "200" : { "value": "#A1C2FF"},
-      "300" : { "value": "#6EA0FF"},
-      "400" : { "value": "#3B7FFF"},
-      "500" : { "value": "#085EFF"},
-      "600" : { "value": "#004AD4"},
-      "700" : { "value": "#0038A1"},
-      "800" : { "value": "#00266E"},
-      "900" : { "value": "#00153B"}
-    },
-    "swatches-secondary-brand"  : {
-      "50"  : { "value": "#4E2DFF"},
-      "100" : { "value": "#2700F9"},
-      "200" : { "value": "#1F00C6"},
-      "300" : { "value": "#170093"},
-      "400" : { "value": "#0F0060"},
-      "500" : { "value": "#000000"},
-      "600" : { "value": "#000000"},
-      "700" : { "value": "#000000"},
-      "800" : { "value": "#000000"},
-      "900" : { "value": "#000000"}
-    },
-    "swatches-success"  : {
-      "50"  : { "value": "#F6FDFD"},
-      "100" : { "value": "#CAF6F1"},
-      "200" : { "value": "#9FEEE6"},
-      "300" : { "value": "#73E7DB"},
-      "400" : { "value": "#48DFCF"},
-      "500" : { "value": "#24D0BE"},
-      "600" : { "value": "#1CA596"},
-      "700" : { "value": "#15796F"},
-      "800" : { "value": "#0D4E47"},
-      "900" : { "value": "#06221F"}
-    },
-    "swatches-info"  : {
-      "50"  : { "value": "#FFFFFF"},
-      "100" : { "value": "#D4E3FF"},
-      "200" : { "value": "#A1C2FF"},
-      "300" : { "value": "#A1C2FF"},
-      "400" : { "value": "#A1C2FF"},
-      "500" : { "value": "#A1C2FF"},
-      "600" : { "value": "#A1C2FF"},
-      "700" : { "value": "#A1C2FF"},
-      "800" : { "value": "#A1C2FF"},
-      "900" : { "value": "#A1C2FF"}
-    },
-    "swatches-warning"  : {
-      "50"  : { "value": "#FFFFFF"},
-      "100" : { "value": "#D4E3FF"},
-      "200" : { "value": "#A1C2FF"},
-      "300" : { "value": "#A1C2FF"},
-      "400" : { "value": "#A1C2FF"},
-      "500" : { "value": "#A1C2FF"},
-      "600" : { "value": "#A1C2FF"},
-      "700" : { "value": "#A1C2FF"},
-      "800" : { "value": "#A1C2FF"},
-      "900" : { "value": "#A1C2FF"}
-    },
-    "swatches-danger"  : {
-      "50"  : { "value": "#FFFFFF"},
-      "100" : { "value": "#D4E3FF"},
-      "200" : { "value": "#A1C2FF"},
-      "300" : { "value": "#A1C2FF"},
-      "400" : { "value": "#A1C2FF"},
-      "500" : { "value": "#A1C2FF"},
-      "600" : { "value": "#A1C2FF"},
-      "700" : { "value": "#A1C2FF"},
-      "800" : { "value": "#A1C2FF"},
-      "900" : { "value": "#A1C2FF"}
+    "swatches"          : {
+      "primary" : {
+        "brand-50"  : { "value": "hsl({color.base.brand.primary.hsl.h}, {color.base.brand.primary.hsl.s}, calc({color.base.brand.primary.hsl.l} + {color.base.brand.primary.const.light} * 5))" },
+        "brand-100" : { "value": "hsl({color.base.brand.primary.hsl.h}, {color.base.brand.primary.hsl.s}, calc({color.base.brand.primary.hsl.l} + {color.base.brand.primary.const.light} * 4))" },
+        "brand-200" : { "value": "hsl({color.base.brand.primary.hsl.h}, {color.base.brand.primary.hsl.s}, calc({color.base.brand.primary.hsl.l} + {color.base.brand.primary.const.light} * 3))" },
+        "brand-300" : { "value": "hsl({color.base.brand.primary.hsl.h}, {color.base.brand.primary.hsl.s}, calc({color.base.brand.primary.hsl.l} + {color.base.brand.primary.const.light} * 2))" },
+        "brand-400" : { "value": "hsl({color.base.brand.primary.hsl.h}, {color.base.brand.primary.hsl.s}, calc({color.base.brand.primary.hsl.l} + {color.base.brand.primary.const.light} * 1))" },
+        "brand-500" : { "value": "hsl({color.base.brand.primary.hsl.h}, {color.base.brand.primary.hsl.s}, {color.base.brand.primary.hsl.l})" },
+        "brand-600" : { "value": "hsl({color.base.brand.primary.hsl.h}, {color.base.brand.primary.hsl.s}, calc({color.base.brand.primary.hsl.l} + {color.base.brand.primary.const.dark} * 1))" },
+        "brand-700" : { "value": "hsl({color.base.brand.primary.hsl.h}, {color.base.brand.primary.hsl.s}, calc({color.base.brand.primary.hsl.l} + {color.base.brand.primary.const.dark} * 2))" },
+        "brand-800" : { "value": "hsl({color.base.brand.primary.hsl.h}, {color.base.brand.primary.hsl.s}, calc({color.base.brand.primary.hsl.l} + {color.base.brand.primary.const.dark} * 3))" },
+        "brand-900" : { "value": "hsl({color.base.brand.primary.hsl.h}, {color.base.brand.primary.hsl.s}, calc({color.base.brand.primary.hsl.l} + {color.base.brand.primary.const.dark} * 4))" }
+      },
+      "secondary" : {
+        "brand-50"  : { "value": "hsl({color.base.brand.secondary.hsl.h}, {color.base.brand.secondary.hsl.s}, calc({color.base.brand.secondary.hsl.l} + {color.base.brand.secondary.const.light} * 5))" },
+        "brand-100" : { "value": "hsl({color.base.brand.secondary.hsl.h}, {color.base.brand.secondary.hsl.s}, calc({color.base.brand.secondary.hsl.l} + {color.base.brand.secondary.const.light} * 4))" },
+        "brand-200" : { "value": "hsl({color.base.brand.secondary.hsl.h}, {color.base.brand.secondary.hsl.s}, calc({color.base.brand.secondary.hsl.l} + {color.base.brand.secondary.const.light} * 3))" },
+        "brand-300" : { "value": "hsl({color.base.brand.secondary.hsl.h}, {color.base.brand.secondary.hsl.s}, calc({color.base.brand.secondary.hsl.l} + {color.base.brand.secondary.const.light} * 2))" },
+        "brand-400" : { "value": "hsl({color.base.brand.secondary.hsl.h}, {color.base.brand.secondary.hsl.s}, calc({color.base.brand.secondary.hsl.l} + {color.base.brand.secondary.const.light} * 1))" },
+        "brand-500" : { "value": "hsl({color.base.brand.secondary.hsl.h}, {color.base.brand.secondary.hsl.s}, {color.base.brand.secondary.hsl.l})" },
+        "brand-600" : { "value": "hsl({color.base.brand.secondary.hsl.h}, {color.base.brand.secondary.hsl.s}, calc({color.base.brand.secondary.hsl.l} + {color.base.brand.secondary.const.dark} * 1))" },
+        "brand-700" : { "value": "hsl({color.base.brand.secondary.hsl.h}, {color.base.brand.secondary.hsl.s}, calc({color.base.brand.secondary.hsl.l} + {color.base.brand.secondary.const.dark} * 2))" },
+        "brand-800" : { "value": "hsl({color.base.brand.secondary.hsl.h}, {color.base.brand.secondary.hsl.s}, calc({color.base.brand.secondary.hsl.l} + {color.base.brand.secondary.const.dark} * 3))" },
+        "brand-900" : { "value": "hsl({color.base.brand.secondary.hsl.h}, {color.base.brand.secondary.hsl.s}, calc({color.base.brand.secondary.hsl.l} + {color.base.brand.secondary.const.dark} * 4))" }
+      },
+      "success" : {
+        "50"  : { "value": "hsl({color.base.success.hsl.h}, {color.base.success.hsl.s}, calc({color.base.success.hsl.l} + {color.base.success.const.light} * 5))" },
+        "100" : { "value": "hsl({color.base.success.hsl.h}, {color.base.success.hsl.s}, calc({color.base.success.hsl.l} + {color.base.success.const.light} * 4))" },
+        "200" : { "value": "hsl({color.base.success.hsl.h}, {color.base.success.hsl.s}, calc({color.base.success.hsl.l} + {color.base.success.const.light} * 3))" },
+        "300" : { "value": "hsl({color.base.success.hsl.h}, {color.base.success.hsl.s}, calc({color.base.success.hsl.l} + {color.base.success.const.light} * 2))" },
+        "400" : { "value": "hsl({color.base.success.hsl.h}, {color.base.success.hsl.s}, calc({color.base.success.hsl.l} + {color.base.success.const.light} * 1))" },
+        "500" : { "value": "hsl({color.base.success.hsl.h}, {color.base.success.hsl.s}, {color.base.success.hsl.l})" },
+        "600" : { "value": "hsl({color.base.success.hsl.h}, {color.base.success.hsl.s}, calc({color.base.success.hsl.l} + {color.base.success.const.dark} * 1))" },
+        "700" : { "value": "hsl({color.base.success.hsl.h}, {color.base.success.hsl.s}, calc({color.base.success.hsl.l} + {color.base.success.const.dark} * 2))" },
+        "800" : { "value": "hsl({color.base.success.hsl.h}, {color.base.success.hsl.s}, calc({color.base.success.hsl.l} + {color.base.success.const.dark} * 3))" },
+        "900" : { "value": "hsl({color.base.success.hsl.h}, {color.base.success.hsl.s}, calc({color.base.success.hsl.l} + {color.base.success.const.dark} * 4))" }
+      },
+      "info"    : {
+        "50"  : { "value": "hsl({color.base.info.hsl.h}, {color.base.info.hsl.s}, calc({color.base.info.hsl.l} + {color.base.info.const.light} * 5))" },
+        "100" : { "value": "hsl({color.base.info.hsl.h}, {color.base.info.hsl.s}, calc({color.base.info.hsl.l} + {color.base.info.const.light} * 4))" },
+        "200" : { "value": "hsl({color.base.info.hsl.h}, {color.base.info.hsl.s}, calc({color.base.info.hsl.l} + {color.base.info.const.light} * 3))" },
+        "300" : { "value": "hsl({color.base.info.hsl.h}, {color.base.info.hsl.s}, calc({color.base.info.hsl.l} + {color.base.info.const.light} * 2))" },
+        "400" : { "value": "hsl({color.base.info.hsl.h}, {color.base.info.hsl.s}, calc({color.base.info.hsl.l} + {color.base.info.const.light} * 1))" },
+        "500" : { "value": "hsl({color.base.info.hsl.h}, {color.base.info.hsl.s}, {color.base.info.hsl.l})" },
+        "600" : { "value": "hsl({color.base.info.hsl.h}, {color.base.info.hsl.s}, calc({color.base.info.hsl.l} + {color.base.info.const.dark} * 1))" },
+        "700" : { "value": "hsl({color.base.info.hsl.h}, {color.base.info.hsl.s}, calc({color.base.info.hsl.l} + {color.base.info.const.dark} * 2))" },
+        "800" : { "value": "hsl({color.base.info.hsl.h}, {color.base.info.hsl.s}, calc({color.base.info.hsl.l} + {color.base.info.const.dark} * 3))" },
+        "900" : { "value": "hsl({color.base.info.hsl.h}, {color.base.info.hsl.s}, calc({color.base.info.hsl.l} + {color.base.info.const.dark} * 4))" }
+      },
+      "warning" : {
+        "50"  : { "value": "hsl({color.base.warning.hsl.h}, {color.base.warning.hsl.s}, calc({color.base.warning.hsl.l} + {color.base.warning.const.light} * 5))" },
+        "100" : { "value": "hsl({color.base.warning.hsl.h}, {color.base.warning.hsl.s}, calc({color.base.warning.hsl.l} + {color.base.warning.const.light} * 4))" },
+        "200" : { "value": "hsl({color.base.warning.hsl.h}, {color.base.warning.hsl.s}, calc({color.base.warning.hsl.l} + {color.base.warning.const.light} * 3))" },
+        "300" : { "value": "hsl({color.base.warning.hsl.h}, {color.base.warning.hsl.s}, calc({color.base.warning.hsl.l} + {color.base.warning.const.light} * 2))" },
+        "400" : { "value": "hsl({color.base.warning.hsl.h}, {color.base.warning.hsl.s}, calc({color.base.warning.hsl.l} + {color.base.warning.const.light} * 1))" },
+        "500" : { "value": "hsl({color.base.warning.hsl.h}, {color.base.warning.hsl.s}, {color.base.warning.hsl.l})" },
+        "600" : { "value": "hsl({color.base.warning.hsl.h}, {color.base.warning.hsl.s}, calc({color.base.warning.hsl.l} + {color.base.warning.const.dark} * 1))" },
+        "700" : { "value": "hsl({color.base.warning.hsl.h}, {color.base.warning.hsl.s}, calc({color.base.warning.hsl.l} + {color.base.warning.const.dark} * 2))" },
+        "800" : { "value": "hsl({color.base.warning.hsl.h}, {color.base.warning.hsl.s}, calc({color.base.warning.hsl.l} + {color.base.warning.const.dark} * 3))" },
+        "900" : { "value": "hsl({color.base.warning.hsl.h}, {color.base.warning.hsl.s}, calc({color.base.warning.hsl.l} + {color.base.warning.const.dark} * 4))" }
+      },
+      "danger"  : {
+        "50"  : { "value": "hsl({color.base.danger.hsl.h}, {color.base.danger.hsl.s}, calc({color.base.danger.hsl.l} + {color.base.danger.const.light} * 5))" },
+        "100" : { "value": "hsl({color.base.danger.hsl.h}, {color.base.danger.hsl.s}, calc({color.base.danger.hsl.l} + {color.base.danger.const.light} * 4))" },
+        "200" : { "value": "hsl({color.base.danger.hsl.h}, {color.base.danger.hsl.s}, calc({color.base.danger.hsl.l} + {color.base.danger.const.light} * 3))" },
+        "300" : { "value": "hsl({color.base.danger.hsl.h}, {color.base.danger.hsl.s}, calc({color.base.danger.hsl.l} + {color.base.danger.const.light} * 2))" },
+        "400" : { "value": "hsl({color.base.danger.hsl.h}, {color.base.danger.hsl.s}, calc({color.base.danger.hsl.l} + {color.base.danger.const.light} * 1))" },
+        "500" : { "value": "hsl({color.base.danger.hsl.h}, {color.base.danger.hsl.s}, {color.base.danger.hsl.l})" },
+        "600" : { "value": "hsl({color.base.danger.hsl.h}, {color.base.danger.hsl.s}, calc({color.base.danger.hsl.l} + {color.base.danger.const.dark} * 1))" },
+        "700" : { "value": "hsl({color.base.danger.hsl.h}, {color.base.danger.hsl.s}, calc({color.base.danger.hsl.l} + {color.base.danger.const.dark} * 2))" },
+        "800" : { "value": "hsl({color.base.danger.hsl.h}, {color.base.danger.hsl.s}, calc({color.base.danger.hsl.l} + {color.base.danger.const.dark} * 3))" },
+        "900" : { "value": "hsl({color.base.danger.hsl.h}, {color.base.danger.hsl.s}, calc({color.base.danger.hsl.l} + {color.base.danger.const.dark} * 4))" }
+      }
     }
   }
 }

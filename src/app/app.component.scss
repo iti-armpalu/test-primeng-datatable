@@ -39,3 +39,37 @@
 .color-font-tertiary {
   color: $color-font-tertiary;
 }
+
+.dot {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.mat-table {
+  border-radius: 4px;
+  overflow: hidden !important;
+}
+
+.mat-cell:first-of-type,
+.mat-header-cell:first-of-type {
+  padding-left: 50px !important;
+  width: 100px;
+}
+
+.mat-cell,
+.mat-header-cell {
+  width: 200px;
+}
+
+.mat-row:hover .mat-cell{
+  background-color: white !important;
+}
+
+.mat-row .mat-cell{
+  border-top: 2px solid $color-background-default !important;
+}
+
+
+
