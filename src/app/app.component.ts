@@ -135,16 +135,16 @@ const BRAND_SECONDARY_COLOR_SWATCHES_DATA: ColorTableElement[] = [
 ];
 
 const SUCCESS_COLOR_SWATCHES_DATA: ColorTableElement[] = [
-  {color: ColorSwatchesSuccess50, token: '--color-swatches-info-50', hex: "TBC"},
-  {color: ColorSwatchesSuccess100, token: '--color-swatches-info-100', hex: "TBC"},
-  {color: ColorSwatchesSuccess200, token: '--color-swatches-info-200', hex: "TBC"},
-  {color: ColorSwatchesSuccess300, token: '--color-swatches-info-300', hex: "TBC"},
-  {color: ColorSwatchesSuccess400, token: '--color-swatches-info-400', hex: "TBC"},
-  {color: ColorSwatchesSuccess500, token: '--color-swatches-info-500', hex: "TBC"},
-  {color: ColorSwatchesSuccess600, token: '--color-swatches-info-600', hex: "TBC"},
-  {color: ColorSwatchesSuccess700, token: '--color-swatches-info-700', hex: "TBC"},
-  {color: ColorSwatchesSuccess800, token: '--color-swatches-info-800', hex: "TBC"},
-  {color: ColorSwatchesSuccess900, token: '--color-swatches-info-900', hex: "TBC"},
+  {color: ColorSwatchesSuccess50, token: '--color-swatches-success-50', hex: "TBC"},
+  {color: ColorSwatchesSuccess100, token: '--color-swatches-success-100', hex: "TBC"},
+  {color: ColorSwatchesSuccess200, token: '--color-swatches-success-200', hex: "TBC"},
+  {color: ColorSwatchesSuccess300, token: '--color-swatches-success-300', hex: "TBC"},
+  {color: ColorSwatchesSuccess400, token: '--color-swatches-success-400', hex: "TBC"},
+  {color: ColorSwatchesSuccess500, token: '--color-swatches-success-500', hex: "TBC"},
+  {color: ColorSwatchesSuccess600, token: '--color-swatches-success-600', hex: "TBC"},
+  {color: ColorSwatchesSuccess700, token: '--color-swatches-success-700', hex: "TBC"},
+  {color: ColorSwatchesSuccess800, token: '--color-swatches-success-800', hex: "TBC"},
+  {color: ColorSwatchesSuccess900, token: '--color-swatches-success-900', hex: "TBC"},
 ];
 
 const INFO_COLOR_SWATCHES_DATA: ColorTableElement[] = [
