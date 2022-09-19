@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 16 Sep 2022 12:43:29 GMT
+ * Generated on Mon, 19 Sep 2022 13:45:20 GMT
  */
 
 export const ColorBaseBrandPrimary : string;
@@ -61,7 +61,7 @@ export const ColorSurfaceWarningPressed : string;
 export const ColorSurfaceDangerDefault : string;
 export const ColorSurfaceDangerHover : string;
 export const ColorSurfaceDangerPressed : string;
-export const ColorOnSurface : string;
+export const ColorOnSurfaceDefault : string;
 export const ColorOnSurfaceNeutral : string;
 export const ColorOnSurfaceBrand : string;
 export const ColorOnSurfaceSuccess : string;

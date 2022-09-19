@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ColorCard } from './color-card.model';
+import { TinyColor } from '@ctrl/tinycolor';
+
+import { ColorConverterService } from './utilities/color-converter.service';
 
 import {
   ColorBaseBrandPrimary, ColorBaseBrandSecondary,
@@ -12,9 +15,10 @@ import {
   ColorGenderMale, ColorGenderFemale, ColorGenderNonBinary,
 
   ColorBackgroundDefault, ColorBackgroundNested, ColorBackgroundHover, ColorBackgroundPressed, ColorBackgroundSelected,
-  ColorSurfaceDefaultDefault, ColorSurfaceDefaultNested, ColorSurfaceDefaultHover, ColorSurfaceDefaultPressed, ColorSurfaceDefaultSelected, ColorSurfaceDefaultSelectedHover, ColorSurfaceDefaultSelectedPressed,
 
-  ColorOnSurface, ColorOnSurfaceNeutral, ColorOnSurfaceBrand, ColorOnSurfaceSuccess, ColorOnSurfaceInfo, ColorOnSurfaceWarning, ColorOnSurfaceDanger, ColorOnSurfaceAlternative,
+  ColorSurfaceDefaultDefault, ColorSurfaceDefaultNested, ColorSurfaceDefaultHover, ColorSurfaceDefaultPressed, ColorSurfaceDefaultSelected, ColorSurfaceDefaultSelectedHover, ColorSurfaceDefaultSelectedPressed, ColorSurfaceBrandDefault, ColorSurfaceBrandHover, ColorSurfaceBrandPressed, ColorSurfaceNeutralDefault, ColorSurfaceNeutralHover, ColorSurfaceNeutralPressed, ColorSurfaceAltDefault, ColorSurfaceAltHover, ColorSurfaceAltPressed, ColorSurfaceSuccessDefault, ColorSurfaceSuccessHover, ColorSurfaceSuccessPressed, ColorSurfaceInfoDefault, ColorSurfaceInfoHover, ColorSurfaceInfoPressed, ColorSurfaceWarningDefault, ColorSurfaceWarningHover, ColorSurfaceWarningPressed, ColorSurfaceDangerDefault, ColorSurfaceDangerHover, ColorSurfaceDangerPressed,
+
+  ColorOnSurfaceDefault, ColorOnSurfaceNeutral, ColorOnSurfaceBrand, ColorOnSurfaceSuccess, ColorOnSurfaceInfo, ColorOnSurfaceWarning, ColorOnSurfaceDanger, ColorOnSurfaceAlternative,
   ColorDisabledDefault, ColorDisabledNested, ColorDisabledAlt,
 
   ColorSwatchesPrimaryBrand50, ColorSwatchesPrimaryBrand100, ColorSwatchesPrimaryBrand200, ColorSwatchesPrimaryBrand300, ColorSwatchesPrimaryBrand400, ColorSwatchesPrimaryBrand500, ColorSwatchesPrimaryBrand600, ColorSwatchesPrimaryBrand700, ColorSwatchesPrimaryBrand800, ColorSwatchesPrimaryBrand900,
@@ -29,6 +33,8 @@ import {
 
   ColorSwatchesDanger50, ColorSwatchesDanger100, ColorSwatchesDanger200, ColorSwatchesDanger300, ColorSwatchesDanger400, ColorSwatchesDanger500, ColorSwatchesDanger600, ColorSwatchesDanger700, ColorSwatchesDanger800, ColorSwatchesDanger900,
 } from '../../build/ts/colors'
+import { MatDialog } from '@angular/material/dialog';
+import { DialogDownloadDesignTokensComponent } from './components/dialog-download-design-tokens/dialog-download-design-tokens.component';
 
 export interface ColorTableElement {
   color: string;
@@ -37,8 +43,8 @@ export interface ColorTableElement {
 }
 
 const MAIN_BRAND_COLORS: ColorCard[] = [
-  {id: 1, title: "Primary Color", hex: ColorBaseBrandPrimary, designToken: "--color-base-brand-primary"},
-  {id: 2, title: "Secondary Color", hex: ColorBaseBrandSecondary, designToken: "--color-base-brand-secondary"}
+  {id: 1, title: "Primary Color", hex: new TinyColor(ColorBaseBrandPrimary).toHexString(), designToken: "--color-base-brand-primary"},
+  {id: 2, title: "Secondary Color", hex: new TinyColor(ColorBaseBrandSecondary).toHexString(), designToken: "--color-base-brand-secondary"}
 ]
 
 const SURFACE_COLORS: ColorCard[] = [
@@ -49,10 +55,10 @@ const SURFACE_COLORS: ColorCard[] = [
 ]
 
 const CONTEXTUAL_COLORS: ColorCard[] = [
-  {id: 1, title: "PrimaryBrand", hex: ColorBaseSuccess, designToken: "--color-base-success"},
-  {id: 2, title: "Informational", hex: ColorBaseInfo, designToken: "--color-base-info"},
-  {id: 3, title: "Warning", hex: ColorBaseWarning, designToken: "--color-base-warning"},
-  {id: 4, title: "Danger", hex: ColorBaseDanger, designToken: "--color-base-danger"}
+  {id: 1, title: "Success", hex: new TinyColor(ColorBaseSuccess).toHexString(), designToken: "--color-base-success"},
+  {id: 2, title: "Informational", hex: new TinyColor(ColorBaseInfo).toHexString(), designToken: "--color-base-info"},
+  {id: 3, title: "Warning", hex: new TinyColor(ColorBaseWarning).toHexString(), designToken: "--color-base-warning"},
+  {id: 4, title: "Danger", hex: new TinyColor(ColorBaseDanger).toHexString(), designToken: "--color-base-danger"}
 ]
 
 const DATA_VISUALIZATION_COLORS: ColorCard[] = [
@@ -89,17 +95,38 @@ const SURFACE_COLORS_DATA: ColorTableElement[] = [
   {color: ColorSurfaceDefaultSelected, token: '--color-surface-default-selected', hex: ColorSurfaceDefaultSelected},
   {color: ColorSurfaceDefaultSelectedHover, token: '--color-surface-default-selected-hover', hex: ColorSurfaceDefaultSelectedHover},
   {color: ColorSurfaceDefaultSelectedPressed, token: '--color-surface-default-selected-pressed', hex: ColorSurfaceDefaultSelectedPressed},
+  {color: ColorSurfaceBrandDefault, token: '--color-surface-brand-default', hex: ColorSurfaceBrandDefault},
+  {color: ColorSurfaceBrandHover, token: '--color-surface-brand-hover', hex: ColorSurfaceBrandHover},
+  {color: ColorSurfaceBrandPressed, token: '--color-surface-brand-pressed', hex: ColorSurfaceBrandPressed},
+  {color: ColorSurfaceNeutralDefault, token: '--color-surface-neutral-default', hex: ColorSurfaceNeutralDefault},
+  {color: ColorSurfaceNeutralHover, token: '--color-surface-neutral-hover', hex: ColorSurfaceNeutralHover},
+  {color: ColorSurfaceNeutralPressed, token: '--color-surface-neutral-pressed', hex: ColorSurfaceNeutralPressed},
+  {color: ColorSurfaceAltDefault, token: '--color-surface-alt-default', hex: ColorSurfaceAltDefault},
+  {color: ColorSurfaceAltHover, token: '--color-surface-alt-hover', hex: ColorSurfaceAltHover},
+  {color: ColorSurfaceAltPressed, token: '--color-surface-alt-pressed', hex: ColorSurfaceAltPressed},
+  {color: ColorSurfaceSuccessDefault, token: '--color-surface-success-default', hex: ColorSurfaceSuccessDefault},
+  {color: ColorSurfaceSuccessHover, token: '--color-surface-success-hover', hex: ColorSurfaceSuccessHover},
+  {color: ColorSurfaceSuccessPressed, token: '--color-surface-success-pressed', hex: ColorSurfaceSuccessPressed},
+  {color: ColorSurfaceInfoDefault, token: '--color-surface-info-default', hex: ColorSurfaceInfoDefault},
+  {color: ColorSurfaceInfoHover, token: '--color-surface-info-hover', hex: ColorSurfaceInfoHover},
+  {color: ColorSurfaceInfoPressed, token: '--color-surface-info-pressed', hex: ColorSurfaceInfoPressed},
+  {color: ColorSurfaceWarningDefault, token: '--color-surface-warning-default', hex: ColorSurfaceWarningDefault},
+  {color: ColorSurfaceWarningHover, token: '--color-surface-warning-hover', hex: ColorSurfaceWarningHover},
+  {color: ColorSurfaceWarningPressed, token: '--color-surface-warning-pressed', hex: ColorSurfaceWarningPressed},
+  {color: ColorSurfaceDangerDefault, token: '--color-surface-danger-default', hex: ColorSurfaceDangerDefault},
+  {color: ColorSurfaceDangerHover, token: '--color-surface-danger-hover', hex: ColorSurfaceDangerHover},
+  {color: ColorSurfaceDangerPressed, token: '--color-surface-danger-pressed', hex: ColorSurfaceDangerPressed}
 ];
 
 const ON_SURFACE_COLORS_DATA: ColorTableElement[] = [
-  {color: ColorOnSurface, token: '--color-on-surface', hex: ColorOnSurface},
+  {color: ColorOnSurfaceDefault, token: '--color-on-surface', hex: ColorOnSurfaceDefault},
   {color: ColorOnSurfaceAlternative, token: '--color-on-surface-alt', hex: ColorOnSurfaceAlternative},
   {color: ColorOnSurfaceNeutral, token: '--color-on-surface-neutral', hex: ColorOnSurfaceNeutral},
-  {color: ColorOnSurfaceBrand, token: '--color-on-surface-brand', hex: ColorOnSurfaceBrand},
-  {color: ColorOnSurfaceSuccess, token: '--color-on-surface-success', hex: ColorOnSurfaceSuccess},
-  {color: ColorOnSurfaceInfo, token: '--color-on-surface-info', hex: ColorOnSurfaceInfo},
-  {color: ColorOnSurfaceWarning, token: '--color-on-surface-warning', hex: ColorOnSurfaceWarning},
-  {color: ColorOnSurfaceDanger, token: '--color-on-surface-danger', hex: ColorOnSurfaceDanger},
+  {color: ColorOnSurfaceBrand, token: '--color-on-surface-brand', hex: new TinyColor(ColorOnSurfaceBrand).toHexString()},
+  {color: ColorOnSurfaceSuccess, token: '--color-on-surface-success', hex: new TinyColor(ColorOnSurfaceSuccess).toHexString()},
+  {color: ColorOnSurfaceInfo, token: '--color-on-surface-info', hex: new TinyColor(ColorOnSurfaceInfo).toHexString()},
+  {color: ColorOnSurfaceWarning, token: '--color-on-surface-warning', hex: new TinyColor(ColorOnSurfaceWarning).toHexString()},
+  {color: ColorOnSurfaceDanger, token: '--color-on-surface-danger', hex: new TinyColor(ColorOnSurfaceDanger).toHexString()},
 ];
 
 const DISABLED_COLORS_DATA: ColorTableElement[] = [
@@ -135,8 +162,8 @@ const BRAND_SECONDARY_COLOR_SWATCHES_DATA: ColorTableElement[] = [
 ];
 
 const SUCCESS_COLOR_SWATCHES_DATA: ColorTableElement[] = [
-  {color: ColorSwatchesSuccess50, token: '--color-swatches-success-50', hex: "TBC"},
-  {color: ColorSwatchesSuccess100, token: '--color-swatches-success-100', hex: "TBC"},
+  {color: ColorSwatchesSuccess50, token: '--color-swatches-success-50', hex: new TinyColor(ColorSwatchesSuccess50).toHexString()},
+  {color: ColorSwatchesSuccess100, token: '--color-swatches-success-100', hex: ColorSwatchesSuccess50},
   {color: ColorSwatchesSuccess200, token: '--color-swatches-success-200', hex: "TBC"},
   {color: ColorSwatchesSuccess300, token: '--color-swatches-success-300', hex: "TBC"},
   {color: ColorSwatchesSuccess400, token: '--color-swatches-success-400', hex: "TBC"},
@@ -194,7 +221,13 @@ const DANGER_COLOR_SWATCHES_DATA: ColorTableElement[] = [
 })
 
 
-export class AppComponent {
+export class AppComponent implements OnInit {
+  hexColor: string = '';
+
+  constructor(
+    private ccService: ColorConverterService,
+    public dialog: MatDialog
+    ) { }
 
   mainBrandColors = MAIN_BRAND_COLORS;
   surfaceColors = SURFACE_COLORS;
@@ -212,6 +245,41 @@ export class AppComponent {
   infoColorSwatchesData = INFO_COLOR_SWATCHES_DATA;
   warningColorSwatchesData = WARNING_COLOR_SWATCHES_DATA;
   dangerColorSwatchesData = DANGER_COLOR_SWATCHES_DATA;
+
+  openDialog() {
+    const dialogRef = this.dialog.open(DialogDownloadDesignTokensComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
+
+  convertHSLtoHex() {
+    console.log("hello");
+  }
+
+  ngOnInit(): void {
+    console.log(new TinyColor(ColorBaseBrandPrimary).toHexString());
+    console.log(new TinyColor(ColorBaseBrandSecondary).toHexString());
+    console.log(this.ccService.HSLToHex(173.7, 70.5, 47.8));
+    console.log(new TinyColor(ColorBaseSuccess).toHexString());
+    console.log(new TinyColor('#24D08E').toHslString());
+
+    console.log(this.ccService.HSLToHex(191, 100, 50));
+    console.log(new TinyColor(ColorBaseInfo).toHexString());
+
+    console.log(this.ccService.HSLToHex(33, 96.3, 57.3));
+    console.log(new TinyColor(ColorBaseWarning).toHexString());
+
+    console.log(this.ccService.HSLToHex(337.6, 73.1, 50.4));
+    console.log(new TinyColor(ColorBaseDanger).toHexString());
+    console.log(new TinyColor('#DD2469').toHslString());
+    console.log(ColorSwatchesPrimaryBrand100);
+    console.log(ColorSwatchesSecondaryBrand100);
+  }
+
+
+
 }
 
 

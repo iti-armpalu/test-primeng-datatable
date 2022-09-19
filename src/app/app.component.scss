@@ -14,6 +14,16 @@
   margin: 0 -4px;
 }
 
+// Flex-div
+.div-flex {
+  display: flex;
+  align-items: center;
+}
+
+.div-flex-grow {
+flex-grow: 1;
+}
+
 // Card
 .color-card {
   border-radius: 4px;
@@ -45,6 +55,7 @@
   width: 36px;
   border-radius: 50%;
   display: inline-block;
+  border: 1px solid $color-background-default;
 }
 
 .mat-table {

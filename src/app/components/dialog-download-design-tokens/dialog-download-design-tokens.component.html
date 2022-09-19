@@ -1,0 +1,64 @@
+<div
+  class="dialog-header mb-5">
+    <h6
+      class="mb-3"
+      mat-dialog-title>
+        Download Design Tokens
+    </h6>
+    <div
+      class="subtitle font-size-medium mb-3">
+        Select download format:
+    </div>
+</div>
+<mat-dialog-content>
+  <div
+    class="mb-2">
+      <span class="example-list-section">
+        <mat-checkbox
+          class="mb-2"
+          [checked]="allComplete"
+          [indeterminate]="someComplete()"
+          (change)="setAll($event.checked)">
+            {{task.name}}
+        </mat-checkbox>
+      </span>
+      <span>
+          <ul
+            class="pl-4">
+              <li *ngFor="let subtask of task.subtasks">
+                <mat-checkbox
+                class="checkbox-small"
+                  [(ngModel)]="subtask.completed"
+                  (ngModelChange)="updateAllComplete()">
+                    {{subtask.name}}
+                </mat-checkbox>
+              </li>
+          </ul>
+      </span>
+      <div class="divider"></div>
+  </div>
+  <div
+    class="mb-2">
+      <mat-checkbox>
+        Android<br><span class="font-size-small">.plist file</span>
+      </mat-checkbox>
+      <div class="divider"></div>
+  </div>
+  <div
+    class="mb-2">
+      <mat-checkbox>
+          iOS<br><span class="font-size-small">.xml file</span>
+      </mat-checkbox>
+      <div class="divider"></div>
+  </div>
+  <div
+    class="mb-2">
+      <mat-checkbox>
+          Figma Tokens<br><span class="font-size-small">.json file</span>
+      </mat-checkbox>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-stroked-button class="button-big" color="neutral" [mat-dialog-close]="true">Cancel</button>
+  <button mat-flat-button class="button-big" [mat-dialog-close]="true">Generate</button>
+</mat-dialog-actions>

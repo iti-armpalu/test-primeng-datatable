@@ -16,9 +16,6 @@
         class="color-text">
           {{ title }}
       </p>
-      <!-- <p>
-        {{ hex | uppercase }}
-      </p> -->
       <p>
         {{ ((hex | slice:-2) === "ff" ? (hex | slice:0:7) : hex) | uppercase }}
       </p>
