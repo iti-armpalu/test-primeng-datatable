@@ -1,0 +1,370 @@
+<div
+  class="mt-6 mb-6">
+  <div
+  class="grid grid-nogutter">
+    <div
+      class="col-4 pr-5">
+      <mat-expansion-panel
+        class="bg-white mb-5">
+        <mat-expansion-panel-header
+          class="expansion-panel-header">
+          <mat-panel-title
+            class="panel-title">
+            <div class="panel-subtitle font-size-small">
+              Headings Font
+            </div>
+            <p class="fw-500 font-size-medium">
+              Snowflake Sans BETA
+            </p>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel
+        class="bg-white mb-7">
+        <mat-expansion-panel-header
+          class="expansion-panel-header">
+          <mat-panel-title
+            class="panel-title">
+            <div class="panel-subtitle font-size-small">
+              Body, Subtitle, Captions & Buttons Font
+            </div>
+            <p class="fw-500 font-size-medium">
+              Snowflake Sans BETA
+            </p>
+          </mat-panel-title>
+
+        </mat-expansion-panel-header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </mat-expansion-panel>
+      <div
+        class="mb-7">
+          <geo-file-upload-form
+          [isUploading]="false"
+          [fileDetails]="false"
+          [shape]="'square'"
+          [height]="'135px'"
+          [accept]="'*'"
+          [title]="'Upload Custom Font'"
+          [description]="'Accepted Font Format: .ttf, .otf or .woff'"
+          [objectFit]="'cover'"
+          [iconClass]="'uil-upload'">
+        </geo-file-upload-form>
+      </div>
+      <div>
+        <h6>
+          Choose Baseline Font Size
+        </h6>
+        <p
+          class="font-size-small font-color-tertiary mb-4">
+          The baseline font size controls the size of all of the font styles, which are calculated automatically by multiplying the base size.
+        </p>
+        <mat-button-toggle-group
+          name="options"
+          aria-label="Options"
+          class="mat-button-group-width">
+            <mat-button-toggle
+              class="selection-button bg-white"
+              value="option-1">
+              12 px
+            </mat-button-toggle>
+            <mat-button-toggle
+              class="selection-button bg-white"
+              value="option-2">
+                14 px
+            </mat-button-toggle>
+            <mat-button-toggle
+              class="selection-button bg-white"
+              value="option-3">
+                16 px
+            </mat-button-toggle>
+            <mat-button-toggle
+              class="selection-button bg-white"
+              value="option-4">
+                18 px
+            </mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+    </div>
+    <div class="col-8">
+      <div
+        class="bg-white p-5">
+        <div class="mb-7">
+          <div>
+            <p
+              class="font-size-medium">
+                Headings
+            </p>
+            <div class="divider"></div>
+          </div>
+          <div>
+            <div class="mb-5">
+              <h1
+                class="mb-0">
+                Heading 1
+              </h1>
+              <p
+                class="font-size-small font-color-tertiary">
+                  Snowflake Sans BETA | 48
+              </p>
+            </div>
+            <div class="mb-5">
+              <h2
+                class="mb-0">
+                Heading 2
+              </h2>
+              <p
+                class="font-size-small font-color-tertiary">
+                  Snowflake Sans BETA | 40
+              </p>
+            </div>
+            <div class="mb-5">
+              <h3
+                class="mb-0">
+                Heading 3
+              </h3>
+              <p
+                class="font-size-small font-color-tertiary">
+                  Snowflake Sans BETA | 32
+              </p>
+            </div>
+            <div class="mb-5">
+              <h4
+                class="mb-0">
+                Heading 4
+              </h4>
+              <p
+                class="font-size-small font-color-tertiary">
+                  Snowflake Sans BETA | 26
+            </div>
+            <div class="mb-5">
+              <h5
+                class="mb-0">
+                Heading 5
+              </h5>
+              <p
+                class="font-size-small font-color-tertiary">
+                  Snowflake Sans BETA | 22
+              </p>
+            </div>
+            <div class="mb-3">
+              <h6
+                class="mb-0">
+                  Heading 6
+              </h6>
+              <p
+                class="font-size-small font-color-tertiary">
+                  Snowflake Sans BETA | 18
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mb-7">
+          <div>
+            <p
+              class="font-size-medium">
+                Subtitles
+            </p>
+            <div class="divider"></div>
+          </div>
+          <div class="grid mt-3">
+            <div class="col col-4 mb-5">
+              <p
+                class="subtitle-regular mb-0">
+                  Subtitle Regular
+            </p>
+              <p
+                class="font-size-small font-color-tertiary">
+                  Snowflake Sans BETA Medium | 16
+              </p>
+            </div>
+            <div class="col col-4 mb-5">
+              <p
+                class="subtitle-bold mb-0">
+                  Subtitle Bold
+              </p>
+              <p
+                class="font-size-small font-color-tertiary">
+                  Snowflake Sans BETA Black | 16
+              </p>
+            </div>
+            <div class="col col-4 mb-5">
+              <p
+                class="subtitle-link mb-0">
+                  Subtitle Link
+              </p>
+              <p
+                class="font-size-small font-color-tertiary">
+                  Snowflake Sans BETA Medium | 16
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mb-7">
+          <div>
+            <p
+              class="font-size-medium">
+                Paragraph 1
+            </p>
+            <div class="divider"></div>
+          </div>
+          <div class="grid mt-3">
+            <div class="col col-4 mb-5">
+              <span
+                class="paragraph-1-regular mb-0">
+                  Paragraph 1 Regular
+              </span>
+              <p
+                class="font-size-small font-color-tertiary">
+                  Snowflake Sans BETA Medium | 14
+              </p>
+            </div>
+            <div class="col col-4 mb-5">
+              <p
+                class="paragraph-1-bold mb-0">
+                Paragraph 1 Bold
+              </p>
+              <p
+                class="font-size-small font-color-tertiary">
+                  Snowflake Sans BETA Black | 14
+              </p>
+            </div>
+            <div class="col col-4 mb-5">
+              <p
+                class="paragraph-1-link mb-0">
+                Paragraph 1 Link
+              </p>
+              <p
+                class="font-size-small font-color-tertiary">
+                  Snowflake Sans BETA Medium | 14
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mb-7">
+          <div>
+            <p
+              class="font-size-medium">
+                Paragraph 2
+            </p>
+            <div class="divider"></div>
+          </div>
+          <div class="grid mt-3">
+            <div class="col col-4 mb-5">
+              <p
+                class="paragraph-2-regular mb-0">
+                  Paragraph 2 Regular
+            </p>
+              <p
+                class="font-size-small font-color-tertiary">
+                  Snowflake Sans BETA Medium | 12
+              </p>
+            </div>
+            <div class="col col-4 mb-5">
+              <p
+                class="paragraph-2-bold mb-0">
+                Paragraph 2 Bold
+              </p>
+              <p
+                class="font-size-small font-color-tertiary">
+                  Snowflake Sans BETA Black | 12
+              </p>
+            </div>
+            <div class="col col-4 mb-5">
+              <p
+                class="paragraph-2-link mb-0">
+                Paragraph 2 Link
+              </p>
+              <p
+                class="font-size-small font-color-tertiary">
+                  Snowflake Sans BETA Medium | 12
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mb-7">
+          <div>
+            <p
+              class="font-size-medium">
+                Captions
+            </p>
+            <div class="divider"></div>
+          </div>
+          <div class="grid mt-3">
+            <div class="col col-4 mb-5">
+              <p
+                class="caption-regular mb-0">
+                  Caption Regular
+            </p>
+              <p
+                class="font-size-small font-color-tertiary">
+                  Snowflake Sans BETA Medium | 11
+              </p>
+            </div>
+            <div class="col col-4 mb-5">
+              <p
+                class="caption-bold mb-0">
+                  Caption Bold
+              </p>
+              <p
+                class="font-size-small font-color-tertiary">
+                  Snowflake Sans BETA Black | 11
+              </p>
+            </div>
+            <div class="col col-4 mb-5">
+              <p
+                class="caption-link mb-0">
+                  Caption Link
+              </p>
+              <p
+                class="font-size-small font-color-tertiary">
+                  Snowflake Sans BETA Medium | 11
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p
+              class="font-size-medium">
+                Button Labels
+            </p>
+            <div class="divider"></div>
+          </div>
+          <div class="grid mt-3">
+            <div class="col col-4 mb-5">
+              <span
+                class="button-label-1 mb-0">
+                  Button Label 1
+              </span>
+              <p
+                class="font-size-small font-color-tertiary">
+                  Snowflake Sans BETA Medium | 14
+              </p>
+            </div>
+            <div class="col col-4 mb-5">
+              <p
+                class="button-label-2 mb-0">
+                  Button Label 2
+              </p>
+              <p
+                class="font-size-small font-color-tertiary">
+                  Snowflake Sans BETA Black | 12
+              </p>
+            </div>
+            <div class="col col-4 mb-5">
+              <p
+                class="button-label-3 mb-0">
+                  Button Label 3
+              </p>
+              <p
+                class="font-size-small font-color-tertiary">
+                  Snowflake Sans BETA Medium | 11
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,159 @@
+
+@import "../../../../build/scss/variables";
+
+.font-color-tertiary {
+  color: $font-color-tertiary;
+}
+
+.bg-white {
+  background-color: $color-base-surface;
+}
+
+.expansion-panel-header {
+  padding: 6px 12px;
+}
+
+.panel-title {
+  display: block;
+}
+
+.panel-subtitle {
+  color: $color-base-brand-primary;
+}
+
+mat-button-toggle-group {
+  width: 100%;
+}
+
+mat-button-toggle {
+  flex: 1 1 100%;
+}
+
+.subtitle-regular {
+  font-size: $typography-subtitle-regular-font-size;
+  font-family: $typography-subtitle-regular-font-family;
+  font-weight: $typography-subtitle-regular-font-weight;
+  line-height: $typography-subtitle-regular-line-height;
+  letter-spacing: $typography-subtitle-regular-letter-spacing;
+}
+
+.subtitle-bold {
+  font-size: $typography-subtitle-bold-font-size;
+  font-family: $typography-subtitle-bold-font-family;
+  font-weight: $typography-subtitle-bold-font-weight;
+  line-height: $typography-subtitle-bold-line-height;
+  letter-spacing: $typography-subtitle-bold-letter-spacing;
+}
+
+.subtitle-link {
+  font-size: $typography-subtitle-link-font-size;
+  font-family: $typography-subtitle-link-font-family;
+  font-weight: $typography-subtitle-link-font-weight;
+  line-height: $typography-subtitle-link-line-height;
+  letter-spacing: $typography-subtitle-link-letter-spacing;
+  text-decoration:  $typography-subtitle-link-text-decoration;
+}
+
+.paragraph-1-regular {
+  font-size: $typography-paragraph-1-regular-font-size;
+  font-family: $typography-paragraph-1-regular-font-family;
+  font-weight: $typography-paragraph-1-regular-font-weight;
+  line-height: $typography-paragraph-1-regular-line-height;
+  letter-spacing: $typography-paragraph-1-regular-letter-spacing;
+}
+
+.paragraph-1-bold {
+  font-size: $typography-paragraph-1-bold-font-size;
+  font-family: $typography-paragraph-1-bold-font-family;
+  font-weight: $typography-paragraph-1-bold-font-weight;
+  line-height: $typography-paragraph-1-bold-line-height;
+  letter-spacing: $typography-paragraph-1-bold-letter-spacing;
+}
+
+.paragraph-1-link {
+  font-size: $typography-paragraph-1-link-font-size;
+  font-family: $typography-paragraph-1-link-font-family;
+  font-weight: $typography-paragraph-1-link-font-weight;
+  line-height: $typography-paragraph-1-link-line-height;
+  text-decoration:  $typography-paragraph-1-link-text-decoration;
+}
+
+.paragraph-2-regular {
+  font-size: $typography-paragraph-2-regular-font-size;
+  font-family: $typography-paragraph-2-regular-font-family;
+  font-weight: $typography-paragraph-2-regular-font-weight;
+  line-height: $typography-paragraph-2-regular-line-height;
+  letter-spacing: $typography-paragraph-2-regular-letter-spacing;
+}
+
+.paragraph-2-bold {
+  font-size: $typography-paragraph-2-bold-font-size;
+  font-family: $typography-paragraph-2-bold-font-family;
+  font-weight: $typography-paragraph-2-bold-font-weight;
+  line-height: $typography-paragraph-2-bold-line-height;
+  letter-spacing: $typography-paragraph-2-bold-letter-spacing;
+}
+
+.paragraph-2-link {
+  font-size: $typography-paragraph-2-link-font-size;
+  font-family: $typography-paragraph-2-link-font-family;
+  font-weight: $typography-paragraph-2-link-font-weight;
+  line-height: $typography-paragraph-2-link-line-height;
+  letter-spacing: $typography-paragraph-2-link-letter-spacing;
+  text-decoration:  $typography-paragraph-2-link-text-decoration;
+}
+
+
+.caption-regular {
+  font-size: $typography-caption-regular-font-size;
+  font-family: $typography-caption-regular-font-family;
+  font-weight: $typography-caption-regular-font-weight;
+  line-height: $typography-caption-regular-line-height;
+  letter-spacing: $typography-caption-regular-letter-spacing;
+}
+
+.caption-bold {
+  font-size: $typography-caption-bold-font-size;
+  font-family: $typography-caption-bold-font-family;
+  font-weight: $typography-caption-bold-font-weight;
+  line-height: $typography-caption-bold-line-height;
+  letter-spacing: $typography-caption-bold-letter-spacing;
+}
+
+.caption-link {
+  font-size: $typography-caption-link-font-size;
+  font-family: $typography-caption-link-font-family;
+  font-weight: $typography-caption-link-font-weight;
+  line-height: $typography-caption-link-line-height;
+  letter-spacing: $typography-caption-link-letter-spacing;
+  text-decoration:  $typography-caption-link-text-decoration;
+}
+
+.button-label-1 {
+  font-size: $typography-button-label-1-font-size;
+  font-family: $typography-button-label-1-font-family;
+  font-weight: $typography-button-label-1-font-weight;
+  line-height: $typography-button-label-1-line-height;
+  letter-spacing: $typography-button-label-1-letter-spacing;
+  text-transform: $typography-button-label-1-text-transform;
+}
+
+.button-label-2 {
+  font-size: $typography-button-label-2-font-size;
+  font-family: $typography-button-label-2-font-family;
+  font-weight: $typography-button-label-2-font-weight;
+  line-height: $typography-button-label-2-line-height;
+  letter-spacing: $typography-button-label-2-letter-spacing;
+  text-transform: $typography-button-label-2-text-transform;
+}
+
+.button-label-3 {
+  font-size: $typography-button-label-3-font-size;
+  font-family: $typography-button-label-3-font-family;
+  font-weight: $typography-button-label-3-font-weight;
+  line-height: $typography-button-label-3-line-height;
+  letter-spacing: $typography-button-label-3-letter-spacing;
+  text-transform: $typography-button-label-3-text-transform;
+}
+
+

@@ -14,13 +14,17 @@ import { AppComponent } from './app.component';
 import { ColorpickerComponent } from './components/colorpicker/colorpicker.component';
 import { DialogDownloadDesignTokensComponent } from './components/dialog-download-design-tokens/dialog-download-design-tokens.component';
 import { HeaderComponent } from './components/header/header.component';
+import { ColorsComponent } from './components/colors/colors.component';
+import { TypographyComponent } from './components/typography/typography.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ColorpickerComponent,
     DialogDownloadDesignTokensComponent,
-    HeaderComponent
+    HeaderComponent,
+    ColorsComponent,
+    TypographyComponent
 
   ],
   imports: [
