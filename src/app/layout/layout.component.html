@@ -1,0 +1,138 @@
+<div [ngClass]="{ page: true, 'menu-opened': menuOpened }">
+  <div [ngClass]="{ 'sidebar-navigation': true, 'open-menu': menuOpened }">
+    <div class="logo">
+      <a [routerLink]="['/']">
+        <img
+          src="/assets/images/vmlyr-agency-logo-vmlyr-commerce-black_1.png"
+          alt="Metron Design System"
+          class="responsive-image pt-4 pb-4">
+      </a>
+    </div>
+    <div class="search">
+      <mat-form-field class="full-width">
+        <input
+          type="text"
+          placeholder="Search..."
+          aria-label="Number"
+          matInput
+        />
+        <i class="uil uil-search" matPrefix></i>
+      </mat-form-field>
+    </div>
+    <ng-container *ngIf="routerEvents$ | async"></ng-container>
+    <nav>
+      <mat-accordion class="sidebar-accordion">
+        <mat-expansion-panel
+          [expanded]="isExpanded(AppRoutesEnum.GETTING_STARTED)"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Getting Started
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="submenu">
+            <a>
+              About
+            </a>
+            <a>
+              Designers
+            </a>
+            <a>
+              Developers
+            </a>
+            <a>
+              Resources
+            </a>
+            <a>
+              What's new
+            </a>
+          </div>
+        </mat-expansion-panel>
+        <mat-expansion-panel
+          [expanded]="isExpanded(AppRoutesEnum.DESIGN_DEVELOP)"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Design & Develop
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="submenu">
+            <div class="sub-sub-menu">
+              <mat-accordion class="sidebar-accordion">
+                <mat-expansion-panel expanded="true">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      Foundations
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <div class="submenu">
+                    <a>
+                      Colors
+                    </a>
+                    <a>
+                      Data Visualization
+                    </a>
+                    <a>
+                      Grid
+                    </a>
+                    <a>
+                      Typography
+                    </a>
+                    <a>
+                      Spacings
+                    </a>
+                    <a>
+                      Icons
+                    </a>
+                  </div>
+                </mat-expansion-panel>
+                <mat-expansion-panel
+                  [expanded]="
+                    isExpanded(AppRoutesEnum.DESIGN_DEVELOP_COMPONENTS)
+                  "
+                >
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      Components
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <div class="submenu">
+                    <a>
+                      Hello
+                    </a>
+                  </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel
+                  [expanded]="isExpanded(AppRoutesEnum.DESIGN_DEVELOP_LAYOUTS)"
+                >
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>Layouts</mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <div class="submenu">
+                    <a>
+                      Steps Wizard
+                    </a>
+                  </div>
+                </mat-expansion-panel>
+              </mat-accordion>
+            </div>
+          </div>
+        </mat-expansion-panel>
+        <mat-expansion-panel
+          [expanded]="isExpanded(AppRoutesEnum.DESIGN_TOKEN_GENERATOR)"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Design Token Generator
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+        </mat-expansion-panel>
+      </mat-accordion>
+
+    </nav>
+  </div>
+  <div class="main-content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

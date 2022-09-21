@@ -1,5 +1,5 @@
 
-@import "../../../../build/scss/variables";
+@import "/build/scss/variables";
 
 .font-color-tertiary {
   color: $font-color-tertiary;
@@ -21,12 +21,12 @@
   color: $color-base-brand-primary;
 }
 
-mat-button-toggle-group {
+.mat-button-toggle-group {
   width: 100%;
 }
 
-mat-button-toggle {
-  flex: 1 1 100%;
+.mat-button-toggle {
+  width: 100%;
 }
 
 .subtitle-regular {

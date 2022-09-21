@@ -1,0 +1,76 @@
+<div
+  class="mt-6 mb-6">
+    <div class="mb-7">
+      <h6>
+        Shadows
+      </h6>
+      <p
+        class="font-size-small text-color-neutral mb-4">
+        Enable or disable shadows globally to give the platform more three dimensionality or a flatter look.
+      </p>
+      <mat-button-toggle-group
+          name="options"
+          aria-label="Options"
+          class="mat-button-group-width">
+            <mat-button-toggle
+              class="selection-button"
+              value="enable">
+                <span class="font-size-medium fw-900 ml-4 mr-4">Enable</span>
+            </mat-button-toggle>
+            <mat-button-toggle
+              class="selection-button"
+              value="disable">
+              <span class="font-size-medium fw-900 ml-4 mr-4">Disable</span>
+            </mat-button-toggle>
+        </mat-button-toggle-group>
+    </div>
+    <div>
+      <h6 class="mb-3">
+        Corner Radius
+      </h6>
+      <div class="grid">
+        <div class="col col-4 pr-6">
+          <p
+            class="font-size-medium fw-900">
+              Interface Cards
+          </p>
+          <p
+            class="font-size-small text-color-neutral mb-4">
+              Controls the border radius for interface elements such as Project cards and other card-like elements.
+          </p>
+          <div class="slider-field">
+            <ngx-slider [options]="selectionSlider"></ngx-slider>
+            <mat-error>Error message here</mat-error>
+          </div>
+        </div>
+        <div class="col col-4 pl-3 pr-3">
+          <p
+            class="font-size-medium fw-900">
+              Buttons
+          </p>
+          <p
+            class="font-size-small text-color-neutral mb-4">
+              Buttons Controls the border radius for buttons.
+          </p>
+          <div class="slider-field">
+            <ngx-slider [options]="selectionSlider"></ngx-slider>
+            <mat-error>Error message here</mat-error>
+          </div>
+        </div>
+        <div class="col col-4 pl-6">
+          <p
+            class="font-size-medium fw-900">
+              Inputs
+          </p>
+          <p
+            class="font-size-small text-color-neutral mb-4">
+              Inputs Controls the border radius for input fields.
+          </p>
+          <div class="slider-field">
+            <ngx-slider [options]="selectionSlider"></ngx-slider>
+            <mat-error>Error message here</mat-error>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

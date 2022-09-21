@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import { ColorCard } from '../../color-card.model';
 import { TinyColor } from '@ctrl/tinycolor';
 
 import {
@@ -30,7 +29,7 @@ import {
   ColorSwatchesWarning50, ColorSwatchesWarning100, ColorSwatchesWarning200, ColorSwatchesWarning300, ColorSwatchesWarning400, ColorSwatchesWarning500, ColorSwatchesWarning600, ColorSwatchesWarning700, ColorSwatchesWarning800, ColorSwatchesWarning900,
 
   ColorSwatchesDanger50, ColorSwatchesDanger100, ColorSwatchesDanger200, ColorSwatchesDanger300, ColorSwatchesDanger400, ColorSwatchesDanger500, ColorSwatchesDanger600, ColorSwatchesDanger700, ColorSwatchesDanger800, ColorSwatchesDanger900,
-} from '../../../../build/ts/colors'
+} from '../../../../../../build/ts/colors'
 
 export interface ColorCard {
   id: number;
