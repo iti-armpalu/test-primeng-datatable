@@ -1,14 +1,14 @@
 /**
  * Do not edit directly
- * Generated on Tue, 20 Sep 2022 11:32:44 GMT
+ * Generated on Thu, 29 Sep 2022 07:25:54 GMT
  */
 
 export const ColorBaseBrandPrimary = "hsl(219.1, 100%, 51.6%)";
-export const ColorBaseBrandSecondary = "hsl(249, 100%, 19%)";
+export const ColorBaseBrandSecondary = "#000000";
 export const ColorBaseSurface = "#ffffff";
 export const ColorBaseOnSurface = "#000000";
 export const ColorBaseOnSurfaceAlt = "#ffffff";
-export const ColorBaseNeutral = "#c8c9cb";
+export const ColorBaseNeutral = "#c7c9cb";
 export const ColorBaseSuccess = "hsl(173.7, 70.5%, 47.8%)";
 export const ColorBaseInfo = "hsl(191.1, 100%, 50%)";
 export const ColorBaseWarning = "hsl(33.1, 96.3%, 57.3%)";
@@ -43,7 +43,7 @@ export const ColorSurfaceDefaultSelectedPressed = "#e6e6e6";
 export const ColorSurfaceBrandDefault = "hsl(219.1, 100%, 51.6%)";
 export const ColorSurfaceBrandHover = "hsl(219.1, 100%, calc(51.6% + -3%))";
 export const ColorSurfaceBrandPressed = "hsl(219.1, 100%, calc(51.6% + -6%))";
-export const ColorSurfaceNeutralDefault = "#c8c9cb";
+export const ColorSurfaceNeutralDefault = "#c7c9cb";
 export const ColorSurfaceNeutralHover = "#bfc0c3";
 export const ColorSurfaceNeutralPressed = "#b7b9bb";
 export const ColorSurfaceAltDefault = "#000000";
@@ -62,7 +62,7 @@ export const ColorSurfaceDangerDefault = "hsl(337.6, 73.1%, 50.4%)";
 export const ColorSurfaceDangerHover = "hsl(337.6, 73.1%, calc(50.4% + -3%))";
 export const ColorSurfaceDangerPressed = "hsl(337.6, 73.1%, calc(50.4% + -6%))";
 export const ColorOnSurfaceDefault = "#000000";
-export const ColorOnSurfaceNeutral = "#c8c9cb";
+export const ColorOnSurfaceNeutral = "#c7c9cb";
 export const ColorOnSurfaceBrand = "hsl(219.1, 100%, 51.6%)";
 export const ColorOnSurfaceSuccess = "hsl(173.7, 70.5%, 47.8%)";
 export const ColorOnSurfaceInfo = "hsl(191.1, 100%, 50%)";
@@ -82,6 +82,7 @@ export const ColorSwatchesPrimaryBrand600 = "hsl(219.1, 100%, calc(51.6% + calc(
 export const ColorSwatchesPrimaryBrand700 = "hsl(219.1, 100%, calc(51.6% + calc((7% - 51.6%)/4) * 2))";
 export const ColorSwatchesPrimaryBrand800 = "hsl(219.1, 100%, calc(51.6% + calc((7% - 51.6%)/4) * 3))";
 export const ColorSwatchesPrimaryBrand900 = "hsl(219.1, 100%, calc(51.6% + calc((7% - 51.6%)/4) * 4))";
+export const ColorSwatchesSecondaryBrand = "hsl(249, 100%, 19%)";
 export const ColorSwatchesSecondaryBrand50 = "hsl(249, 100%, calc(19% + calc((97% - 19%)/5) * 5))";
 export const ColorSwatchesSecondaryBrand100 = "hsl(249, 100%, calc(19% + calc((97% - 19%)/5) * 4))";
 export const ColorSwatchesSecondaryBrand200 = "hsl(249, 100%, calc(19% + calc((97% - 19%)/5) * 3))";
@@ -146,6 +147,16 @@ export const FontSize3xl = "calc(16px * 1.625)";
 export const FontSize4xl = "calc(16px * 1.875)";
 export const FontSize5xl = "calc(16px * 2.25)";
 export const FontSize6xl = "calc(16px * 3)";
+export const FontMultiplierXs = "0.6875";
+export const FontMultiplierSmall = "0.75";
+export const FontMultiplierMedium = "0.875";
+export const FontMultiplierLarge = "1";
+export const FontMultiplierXl = "1.125";
+export const FontMultiplier2xl = "1.375";
+export const FontMultiplier3xl = "1.625";
+export const FontMultiplier4xl = "1.875";
+export const FontMultiplier5xl = "2.25";
+export const FontMultiplier6xl = "3";
 export const FontWeight100 = "100";
 export const FontWeight300 = "300";
 export const FontWeight400 = "Normal";
@@ -185,6 +196,9 @@ export const TextDecorationUnderline = "underline";
 export const TextTransformUppercase = "uppercase";
 export const TextTransformLowercase = "lowercase";
 export const TextTransformCapitalize = "capitalize";
+export const BoxShadowLow = "rgb(0 0 0 / 5%) 0px 3px 20px 0px";
+export const BoxShadowMedium = "rgb(0 0 0 / 10%) 0px 25px 50px 0px";
+export const BoxShadowHigh = "rgb(0 0 0 / 20%) 0px 40px 100px 0px";
 export const TypographyH1FontSize = "calc(16px * 3)";
 export const TypographyH1FontFamily = "YRThree";
 export const TypographyH1FontWeight = "900";

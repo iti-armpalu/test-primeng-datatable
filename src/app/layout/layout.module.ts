@@ -19,6 +19,8 @@ import { TypographyComponent } from './design-token-generator/components/typogra
 import { ColorpickerComponent } from './design-token-generator/components/colorpicker/colorpicker.component';
 import { InterfaceComponent } from './design-token-generator/components/interface/interface.component';
 import { DialogDownloadDesignTokensComponent } from './design-token-generator/components/dialog-download-design-tokens/dialog-download-design-tokens.component';
+import { SliderComponent } from './design-token-generator/components/slider/slider.component';
+import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
 
 
 @NgModule({
@@ -30,7 +32,8 @@ import { DialogDownloadDesignTokensComponent } from './design-token-generator/co
     ColorsComponent,
     ColorpickerComponent,
     TypographyComponent,
-    InterfaceComponent
+    InterfaceComponent,
+    SliderComponent
   ],
   imports: [
     CommonModule,
@@ -39,7 +42,8 @@ import { DialogDownloadDesignTokensComponent } from './design-token-generator/co
     MaterialModule,
     ColorPickerModule,
     NgxSliderModule,
-    FormsModule
+    FormsModule,
+    AngularMultiSelectModule
   ],
 })
 export class LayoutModule {}

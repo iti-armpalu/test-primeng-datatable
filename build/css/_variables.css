@@ -1,15 +1,15 @@
 /**
  * Do not edit directly
- * Generated on Tue, 20 Sep 2022 11:32:44 GMT
+ * Generated on Thu, 29 Sep 2022 07:25:54 GMT
  */
 
 :root {
   --color-base-brand-primary: hsl(219.1, 100%, 51.6%);
-  --color-base-brand-secondary: hsl(249, 100%, 19%);
+  --color-base-brand-secondary: #000000;
   --color-base-surface: #ffffff;
   --color-base-on-surface: #000000;
   --color-base-on-surface-alt: #ffffff;
-  --color-base-neutral: #c8c9cb;
+  --color-base-neutral: #c7c9cb;
   --color-base-success: hsl(173.7, 70.5%, 47.8%);
   --color-base-info: hsl(191.1, 100%, 50%);
   --color-base-warning: hsl(33.1, 96.3%, 57.3%);
@@ -44,7 +44,7 @@
   --color-surface-brand-default: hsl(219.1, 100%, 51.6%);
   --color-surface-brand-hover: hsl(219.1, 100%, calc(51.6% + -3%));
   --color-surface-brand-pressed: hsl(219.1, 100%, calc(51.6% + -6%));
-  --color-surface-neutral-default: #c8c9cb;
+  --color-surface-neutral-default: #c7c9cb;
   --color-surface-neutral-hover: #bfc0c3;
   --color-surface-neutral-pressed: #b7b9bb;
   --color-surface-alt-default: #000000;
@@ -63,7 +63,7 @@
   --color-surface-danger-hover: hsl(337.6, 73.1%, calc(50.4% + -3%));
   --color-surface-danger-pressed: hsl(337.6, 73.1%, calc(50.4% + -6%));
   --color-on-surface-default: #000000;
-  --color-on-surface-neutral: #c8c9cb;
+  --color-on-surface-neutral: #c7c9cb;
   --color-on-surface-brand: hsl(219.1, 100%, 51.6%);
   --color-on-surface-success: hsl(173.7, 70.5%, 47.8%);
   --color-on-surface-info: hsl(191.1, 100%, 50%);
@@ -83,6 +83,7 @@
   --color-swatches-primary-brand-700: hsl(219.1, 100%, calc(51.6% + calc((7% - 51.6%)/4) * 2));
   --color-swatches-primary-brand-800: hsl(219.1, 100%, calc(51.6% + calc((7% - 51.6%)/4) * 3));
   --color-swatches-primary-brand-900: hsl(219.1, 100%, calc(51.6% + calc((7% - 51.6%)/4) * 4));
+  --color-swatches-secondary-brand: hsl(249, 100%, 19%);
   --color-swatches-secondary-brand-50: hsl(249, 100%, calc(19% + calc((97% - 19%)/5) * 5));
   --color-swatches-secondary-brand-100: hsl(249, 100%, calc(19% + calc((97% - 19%)/5) * 4));
   --color-swatches-secondary-brand-200: hsl(249, 100%, calc(19% + calc((97% - 19%)/5) * 3));
@@ -147,6 +148,16 @@
   --font-size-4xl: calc(16px * 1.875);
   --font-size-5xl: calc(16px * 2.25);
   --font-size-6xl: calc(16px * 3);
+  --font-multiplier-xs: 0.6875;
+  --font-multiplier-small: 0.75;
+  --font-multiplier-medium: 0.875;
+  --font-multiplier-large: 1;
+  --font-multiplier-xl: 1.125;
+  --font-multiplier-2xl: 1.375;
+  --font-multiplier-3xl: 1.625;
+  --font-multiplier-4xl: 1.875;
+  --font-multiplier-5xl: 2.25;
+  --font-multiplier-6xl: 3;
   --font-weight-100: 100;
   --font-weight-300: 300;
   --font-weight-400: Normal;
@@ -186,6 +197,9 @@
   --text-transform-uppercase: uppercase;
   --text-transform-lowercase: lowercase;
   --text-transform-capitalize: capitalize;
+  --box-shadow-low: rgb(0 0 0 / 5%) 0px 3px 20px 0px;
+  --box-shadow-medium: rgb(0 0 0 / 10%) 0px 25px 50px 0px;
+  --box-shadow-high: rgb(0 0 0 / 20%) 0px 40px 100px 0px;
   --typography-h1-font-size: calc(16px * 3);
   --typography-h1-font-family: YRThree;
   --typography-h1-font-weight: 900;

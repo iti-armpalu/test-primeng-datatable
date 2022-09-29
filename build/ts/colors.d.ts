@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 20 Sep 2022 11:32:44 GMT
+ * Generated on Thu, 29 Sep 2022 07:25:54 GMT
  */
 
 export const ColorBaseBrandPrimary : string;
@@ -82,6 +82,7 @@ export const ColorSwatchesPrimaryBrand600 : string;
 export const ColorSwatchesPrimaryBrand700 : string;
 export const ColorSwatchesPrimaryBrand800 : string;
 export const ColorSwatchesPrimaryBrand900 : string;
+export const ColorSwatchesSecondaryBrand : string;
 export const ColorSwatchesSecondaryBrand50 : string;
 export const ColorSwatchesSecondaryBrand100 : string;
 export const ColorSwatchesSecondaryBrand200 : string;
@@ -146,6 +147,16 @@ export const FontSize3xl : string;
 export const FontSize4xl : string;
 export const FontSize5xl : string;
 export const FontSize6xl : string;
+export const FontMultiplierXs : string;
+export const FontMultiplierSmall : string;
+export const FontMultiplierMedium : string;
+export const FontMultiplierLarge : string;
+export const FontMultiplierXl : string;
+export const FontMultiplier2xl : string;
+export const FontMultiplier3xl : string;
+export const FontMultiplier4xl : string;
+export const FontMultiplier5xl : string;
+export const FontMultiplier6xl : string;
 export const FontWeight100 : string;
 export const FontWeight300 : string;
 export const FontWeight400 : string;
@@ -185,6 +196,9 @@ export const TextDecorationUnderline : string;
 export const TextTransformUppercase : string;
 export const TextTransformLowercase : string;
 export const TextTransformCapitalize : string;
+export const BoxShadowLow : string;
+export const BoxShadowMedium : string;
+export const BoxShadowHigh : string;
 export const TypographyH1FontSize : string;
 export const TypographyH1FontFamily : string;
 export const TypographyH1FontWeight : string;

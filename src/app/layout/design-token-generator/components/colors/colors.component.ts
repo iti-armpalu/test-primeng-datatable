@@ -29,7 +29,7 @@ import {
   ColorSwatchesWarning50, ColorSwatchesWarning100, ColorSwatchesWarning200, ColorSwatchesWarning300, ColorSwatchesWarning400, ColorSwatchesWarning500, ColorSwatchesWarning600, ColorSwatchesWarning700, ColorSwatchesWarning800, ColorSwatchesWarning900,
 
   ColorSwatchesDanger50, ColorSwatchesDanger100, ColorSwatchesDanger200, ColorSwatchesDanger300, ColorSwatchesDanger400, ColorSwatchesDanger500, ColorSwatchesDanger600, ColorSwatchesDanger700, ColorSwatchesDanger800, ColorSwatchesDanger900,
-} from '../../../../../../build/ts/colors'
+} from '../../../../../../build/ts/colors';
 
 export interface ColorCard {
   id: number;
@@ -97,7 +97,7 @@ const SURFACE_COLORS_DATA: ColorTableElement[] = [
   {color: ColorSurfaceDefaultSelected, token: '--color-surface-default-selected', hex: ColorSurfaceDefaultSelected},
   {color: ColorSurfaceDefaultSelectedHover, token: '--color-surface-default-selected-hover', hex: ColorSurfaceDefaultSelectedHover},
   {color: ColorSurfaceDefaultSelectedPressed, token: '--color-surface-default-selected-pressed', hex: ColorSurfaceDefaultSelectedPressed},
-  {color: ColorSurfaceBrandDefault, token: '--color-surface-brand-default', hex: ColorSurfaceBrandDefault},
+  {color: ColorSurfaceBrandDefault, token: '--color-surface-brand-default', hex: new TinyColor(ColorSurfaceBrandDefault).toHexString()},
   {color: ColorSurfaceBrandHover, token: '--color-surface-brand-hover', hex: ColorSurfaceBrandHover},
   {color: ColorSurfaceBrandPressed, token: '--color-surface-brand-pressed', hex: ColorSurfaceBrandPressed},
   {color: ColorSurfaceNeutralDefault, token: '--color-surface-neutral-default', hex: ColorSurfaceNeutralDefault},
@@ -106,16 +106,16 @@ const SURFACE_COLORS_DATA: ColorTableElement[] = [
   {color: ColorSurfaceAltDefault, token: '--color-surface-alt-default', hex: ColorSurfaceAltDefault},
   {color: ColorSurfaceAltHover, token: '--color-surface-alt-hover', hex: ColorSurfaceAltHover},
   {color: ColorSurfaceAltPressed, token: '--color-surface-alt-pressed', hex: ColorSurfaceAltPressed},
-  {color: ColorSurfaceSuccessDefault, token: '--color-surface-success-default', hex: ColorSurfaceSuccessDefault},
+  {color: ColorSurfaceSuccessDefault, token: '--color-surface-success-default', hex: new TinyColor(ColorSurfaceSuccessDefault).toHexString()},
   {color: ColorSurfaceSuccessHover, token: '--color-surface-success-hover', hex: ColorSurfaceSuccessHover},
   {color: ColorSurfaceSuccessPressed, token: '--color-surface-success-pressed', hex: ColorSurfaceSuccessPressed},
-  {color: ColorSurfaceInfoDefault, token: '--color-surface-info-default', hex: ColorSurfaceInfoDefault},
+  {color: ColorSurfaceInfoDefault, token: '--color-surface-info-default', hex: new TinyColor(ColorSurfaceInfoDefault).toHexString()},
   {color: ColorSurfaceInfoHover, token: '--color-surface-info-hover', hex: ColorSurfaceInfoHover},
   {color: ColorSurfaceInfoPressed, token: '--color-surface-info-pressed', hex: ColorSurfaceInfoPressed},
-  {color: ColorSurfaceWarningDefault, token: '--color-surface-warning-default', hex: ColorSurfaceWarningDefault},
+  {color: ColorSurfaceWarningDefault, token: '--color-surface-warning-default', hex: new TinyColor(ColorSurfaceWarningDefault).toHexString()},
   {color: ColorSurfaceWarningHover, token: '--color-surface-warning-hover', hex: ColorSurfaceWarningHover},
   {color: ColorSurfaceWarningPressed, token: '--color-surface-warning-pressed', hex: ColorSurfaceWarningPressed},
-  {color: ColorSurfaceDangerDefault, token: '--color-surface-danger-default', hex: ColorSurfaceDangerDefault},
+  {color: ColorSurfaceDangerDefault, token: '--color-surface-danger-default', hex: new TinyColor(ColorSurfaceDangerDefault).toHexString()},
   {color: ColorSurfaceDangerHover, token: '--color-surface-danger-hover', hex: ColorSurfaceDangerHover},
   {color: ColorSurfaceDangerPressed, token: '--color-surface-danger-pressed', hex: ColorSurfaceDangerPressed}
 ];
@@ -164,8 +164,8 @@ const BRAND_SECONDARY_COLOR_SWATCHES_DATA: ColorTableElement[] = [
 ];
 
 const SUCCESS_COLOR_SWATCHES_DATA: ColorTableElement[] = [
-  {color: ColorSwatchesSuccess50, token: '--color-swatches-success-50', hex: new TinyColor(ColorSwatchesSuccess50).toHexString()},
-  {color: ColorSwatchesSuccess100, token: '--color-swatches-success-100', hex: ColorSwatchesSuccess50},
+  {color: ColorSwatchesSuccess50, token: '--color-swatches-success-50', hex: "TBC"},
+  {color: ColorSwatchesSuccess100, token: '--color-swatches-success-100', hex: "TBC"},
   {color: ColorSwatchesSuccess200, token: '--color-swatches-success-200', hex: "TBC"},
   {color: ColorSwatchesSuccess300, token: '--color-swatches-success-300', hex: "TBC"},
   {color: ColorSwatchesSuccess400, token: '--color-swatches-success-400', hex: "TBC"},
