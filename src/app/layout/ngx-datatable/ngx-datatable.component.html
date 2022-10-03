@@ -1,0 +1,191 @@
+<div
+  class="page-content">
+  <div>
+    <h1>NGX DataTable</h1>
+</div>
+<div class="border-top" style="margin-bottom: 1rem !important;">
+</div>
+<div class="col-md-12 mb-3" style="margin-top: 10px;">
+  <div class="search">
+    <mat-form-field class="full-width">
+      <input
+        #search
+        type="text"
+        placeholder="Search..."
+        aria-label="Number"
+        matInput
+
+      />
+      <i class="uil uil-search" matPrefix></i>
+    </mat-form-field>
+  </div>
+
+  <ngx-datatable
+    #table
+    class="material container"
+    [rows]="rows" [columnMode]="'flex'"
+    [headerHeight]="50"
+    [footerHeight]="50"
+    rowHeight="auto"
+    [columnMode]="'force'"
+    [limit]="10"
+    [sorts]="[{prop: 'name', dir: 'asc'}]"
+
+    [selectionType]='"checkbox"'
+    [selectAllRowsOnPage]="false"
+    (select)='onSelect($event)'
+  >
+
+  <!-- Row Detail Template -->
+  <ngx-datatable-row-detail
+    [rowHeight]="100"
+    #myDetailRow
+    (toggle)="onDetailToggle($event)">
+      <ng-template
+        let-row="row"
+        let-expanded="expanded"
+        ngx-datatable-row-detail-template>
+        <div style="padding-left:35px;">
+          <div><strong>Address</strong></div>
+          <div>{{ row.address.city }}, {{ row.address.state }}</div>
+        </div>
+      </ng-template>
+  </ngx-datatable-row-detail>
+
+
+      <ngx-datatable-column
+        [width]="30"
+        [sortable]="false"
+        [canAutoResize]="false"
+        [draggable]="false"
+        [resizeable]="false"
+        [headerCheckboxable]="true"
+        [checkboxable]="true">
+      </ngx-datatable-column>
+
+      <ngx-datatable-column
+      [width]="50"
+      [resizeable]="false"
+      [sortable]="false"
+      [draggable]="false"
+      [canAutoResize]="false"
+    >
+      <ng-template let-row="row" let-expanded="expanded" ngx-datatable-cell-template>
+        <a
+          href="javascript:void(0)"
+          [class.datatable-icon-right]="!expanded"
+          [class.datatable-icon-down]="expanded"
+          title="Expand/Collapse Row"
+          (click)="toggleExpandRow(row)"
+        >
+        </a>
+      </ng-template>
+    </ngx-datatable-column>
+
+
+      <ngx-datatable-column
+        name="#"
+        [width]="30"
+        [sortable]="false">
+          <ng-template
+            let-rowIndex="rowIndex"
+            let-row="row"
+            ngx-datatable-cell-template>
+              {{(rowIndex + 1)}}
+          </ng-template>
+      </ngx-datatable-column>
+      <ngx-datatable-column
+        name="Name"
+        prop="name"
+        [flexGrow]="2">
+          <ng-template
+            let-row="row"
+            ngx-datatable-cell-template>
+              {{ row.name | titlecase }}
+          </ng-template>
+      </ngx-datatable-column>
+      <ngx-datatable-column
+        name="Company"
+        prop="company"
+        [flexGrow]="2">
+          <ng-template
+            let-row="row"
+            ngx-datatable-cell-template
+            let-value="value">
+              {{ value }}
+          </ng-template>
+      </ngx-datatable-column>
+      <ngx-datatable-column
+        name="Gender"
+        prop="gender"
+        [cellClass]="getCellClass"
+        [flexGrow]="2">
+          <ng-template
+            let-row="row"
+            ngx-datatable-cell-template
+            let-value="value">
+              {{ value }}
+          </ng-template>
+      </ngx-datatable-column>
+      <ngx-datatable-column
+        name="Age"
+        prop="age"
+        [flexGrow]="2">
+          <ng-template
+            let-row="row"
+            ngx-datatable-cell-template
+            let-value="value">
+              {{ value }}
+          </ng-template>
+      </ngx-datatable-column>
+      <ngx-datatable-column
+        name="button"
+        [flexGrow]="2"
+        [sortable]="false">
+          <ng-template
+            let-column="column"
+            ngx-datatable-header-template>
+          </ng-template>
+          <ng-template
+              let-value="value"
+              ngx-datatable-cell-template>
+                <button
+                  mat-stroked-button
+                  class="icon-left">
+                    <i class="uil uil-star"></i>
+                    Update
+                </button>
+          </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column
+        name="button"
+        [flexGrow]="2"
+        [sortable]="false">
+          <ng-template
+            let-column="column"
+            ngx-datatable-header-template>
+          </ng-template>
+          <ng-template
+              let-value="value"
+              ngx-datatable-cell-template>
+                <button
+                  mat-flat-button
+                  class="button-small">
+                    Delete
+                </button>
+          </ng-template>
+    </ngx-datatable-column>
+  </ngx-datatable>
+  <div class="mt-8">
+    <h4>
+      Selections <small>({{ selected?.length }})</small>
+    </h4>
+    <ul>
+      <li *ngFor="let sel of selected">
+        {{ sel.name }}
+      </li>
+      <li *ngIf="!selected?.length">No Selections</li>
+    </ul>
+  </div>
+</div>
+</div>

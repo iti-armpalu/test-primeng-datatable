@@ -5,20 +5,7 @@ import { LayoutComponent } from './layout.component';
 const routes: Routes = [
   {
     path: '',
-    component: LayoutComponent,
-
-    children: [
-      {path: '', redirectTo: 'design-token-generator', pathMatch: 'full'},
-      {
-        path: 'design-token-generator',
-        loadChildren: () =>
-          import('./design-token-generator/design-token-generator.module')
-            .then((m) => m.DesignTokenGeneratorModule)
-            .catch((err) => {
-              console.log(err);
-            }),
-      }
-    ]
+    component: LayoutComponent
   }
 ];
 

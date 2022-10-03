@@ -1,0 +1,31 @@
+@import "/build/scss/variables";
+
+.page-content {
+  padding: 36px;
+  max-width: 1200px;
+}
+
+// Custom code for NGX Datatable
+.ngx-datatable {
+  border-radius: 4px;
+}
+
+::ng-deep .ngx-datatable.material {
+  .datatable-header {
+    .datatable-header-cell {
+      color: $color-base-brand-primary;
+    }
+  }
+}
+
+::ng-deep .datatable-checkbox input[type=checkbox] {
+  vertical-align: top !important;
+}
+
+::ng-deep .is-female {
+  color: $color-gender-female !important;
+}
+
+::ng-deep .ngx-datatable .datatable-body .datatable-body-row>div {
+  align-items: center;
+}

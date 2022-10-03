@@ -2,48 +2,37 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LayoutRoutingModule } from './layout-routing.module';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
+// NGX
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 // Metron Design System
 import { MetronDesignSystemLibModule } from '@nudgelabs/metron-design-system-lib';
 import { MaterialModule } from '../shared/material/material.module';
-import { ColorPickerModule } from 'ngx-color-picker';
-import { NgxSliderModule } from '@angular-slider/ngx-slider';
 
 // Components
 import { LayoutComponent } from './layout.component';
-import { DesignTokenGeneratorComponent } from './design-token-generator/design-token-generator.component';
-import { HeaderComponent } from './design-token-generator/components/header/header.component';
-import { ColorsComponent } from './design-token-generator/components/colors/colors.component';
-import { TypographyComponent } from './design-token-generator/components/typography/typography.component';
-import { ColorpickerComponent } from './design-token-generator/components/colorpicker/colorpicker.component';
-import { InterfaceComponent } from './design-token-generator/components/interface/interface.component';
-import { DialogDownloadDesignTokensComponent } from './design-token-generator/components/dialog-download-design-tokens/dialog-download-design-tokens.component';
-import { SliderComponent } from './design-token-generator/components/slider/slider.component';
-import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
+import { NgxDatatableComponent } from './ngx-datatable/ngx-datatable.component';
+
+
 
 
 @NgModule({
   declarations: [
     LayoutComponent,
-    DesignTokenGeneratorComponent,
-    HeaderComponent,
-    DialogDownloadDesignTokensComponent,
-    ColorsComponent,
-    ColorpickerComponent,
-    TypographyComponent,
-    InterfaceComponent,
-    SliderComponent
+    NgxDatatableComponent
   ],
   imports: [
     CommonModule,
     LayoutRoutingModule,
     MetronDesignSystemLibModule,
     MaterialModule,
-    ColorPickerModule,
-    NgxSliderModule,
     FormsModule,
-    AngularMultiSelectModule
+    NgxDatatableModule,
+    HttpClientModule
+
+
   ],
 })
 export class LayoutModule {}
