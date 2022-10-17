@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "metron-design-tokens-generator": {
+    "test-primeng-datatable": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/metron-design-tokens-generator",
+            "outputPath": "dist/test-primeng-datatable",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -41,9 +41,9 @@
             "styles": [
               "src/styles.scss",
               "node_modules/@nudgelabs/metron-design-system-lib/src/lib/styles/variables/_variables.scss",
-              "./node_modules/@swimlane/ngx-datatable/index.css",
-              "./node_modules/@swimlane/ngx-datatable/themes/material.scss",
-              "./node_modules/@swimlane/ngx-datatable/assets/icons.css"
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/saga-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": []
           },
@@ -84,10 +84,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "metron-design-tokens-generator:build:production"
+              "browserTarget": "test-primeng-datatable:build:production"
             },
             "development": {
-              "browserTarget": "metron-design-tokens-generator:build:development"
+              "browserTarget": "test-primeng-datatable:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -95,7 +95,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "metron-design-tokens-generator:build"
+            "browserTarget": "test-primeng-datatable:build"
           }
         },
         "test": {
@@ -119,5 +119,5 @@
       }
     }
   },
-  "defaultProject": "metron-design-tokens-generator"
+  "defaultProject": "test-primeng-datatable"
 }

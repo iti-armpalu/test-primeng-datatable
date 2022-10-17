@@ -1,5 +1,5 @@
 {
-  "name": "metron-design-tokens-generator",
+  "name": "test-ngx-datatable",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -33,6 +33,7 @@
     "ng-inline-svg": "^13.1.2",
     "ngx-color-picker": "^12.0.1",
     "npm": "^8.19.2",
+    "primeicons": "^6.0.1",
     "primeng": "^12.2.3",
     "rxjs": "~6.6.0",
     "tinycolor2": "^1.4.2",

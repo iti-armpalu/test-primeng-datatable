@@ -4,8 +4,9 @@ import { LayoutRoutingModule } from './layout-routing.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-// NGX
-import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+// Prime NG dfatatble
+import { TableModule } from 'primeng/table';
+import {ButtonModule} from 'primeng/button';
 
 // Metron Design System
 import { MetronDesignSystemLibModule } from '@nudgelabs/metron-design-system-lib';
@@ -13,7 +14,9 @@ import { MaterialModule } from '../shared/material/material.module';
 
 // Components
 import { LayoutComponent } from './layout.component';
-import { NgxDatatableComponent } from './ngx-datatable/ngx-datatable.component';
+import { PrimengDatatableComponent } from './primeng-datatable/primeng-datatable.component';
+import { CustomerService } from './primeng-datatable/customerservice';
+import { ProductService } from './primeng-datatable/productservice';
 
 
 
@@ -21,7 +24,7 @@ import { NgxDatatableComponent } from './ngx-datatable/ngx-datatable.component';
 @NgModule({
   declarations: [
     LayoutComponent,
-    NgxDatatableComponent
+    PrimengDatatableComponent
   ],
   imports: [
     CommonModule,
@@ -29,10 +32,10 @@ import { NgxDatatableComponent } from './ngx-datatable/ngx-datatable.component';
     MetronDesignSystemLibModule,
     MaterialModule,
     FormsModule,
-    NgxDatatableModule,
-    HttpClientModule
-
-
+    HttpClientModule,
+    TableModule,
+    ButtonModule
   ],
+  providers: [CustomerService, ProductService]
 })
 export class LayoutModule {}
