@@ -24,6 +24,7 @@
         [filterDelay]="0"
         [globalFilterFields]="['name','country.name','representative.name','status']"
         [resizableColumns]="true"
+        responsiveLayout="stack"
       >
               <ng-template pTemplate="caption">
                 <div class="flex">
@@ -31,6 +32,9 @@
                     <button type="button" pButton pRipple icon="pi pi-file-excel" (click)="exportExcel()" class="p-button-success mr-2"  pTooltip="XLS" tooltipPosition="bottom"></button>
                     <button type="button" pButton pRipple icon="pi pi-file-pdf" (click)="exportPdf()" class="p-button-warning mr-2" pTooltip="PDF" tooltipPosition="bottom"></button>
                 </div>
+                <span class="p-input-icon-left mt-2">
+                  <input pInputText type="text" (input)="dt.filterGlobal($event.target.value, 'contains')" placeholder="Search keyword" />
+              </span>
             </ng-template>
               <ng-template pTemplate="header">
                   <tr>
